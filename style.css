@@ -1,7 +1,14 @@
-
+    @font-face {
+        font-family: 'ByteBounce';
+        src: url('fonts/ByteBounce.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+  
     body {
         /* display: flex; */
         margin: 0;
+        overflow-x: hidden;
         background-color: #F1C1BD;
         display: flex;
         flex-wrap: wrap;
@@ -27,7 +34,7 @@
     .greetings-panel h1{
         color: #CB6C6A;
         text-align: center;
-        font-family: ByteBounce;
+        font-family: 'ByteBounce';
         font-size: 70px;
         font-style: normal;
         font-weight: 400;
@@ -41,7 +48,7 @@
         
         color: #CB6C6A;
         text-align: center;
-        font-family: ByteBounce;
+        font-family: 'ByteBounce';
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -55,7 +62,7 @@
     .projects-panel h1{
         color: #CB6C6A;
         text-align: center;
-        font-family: ByteBounce;
+        font-family: 'ByteBounce';
         font-size: 70px;
         font-style: normal;
         font-weight: 400;
