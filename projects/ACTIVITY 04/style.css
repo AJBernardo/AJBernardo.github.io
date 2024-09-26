@@ -2,6 +2,9 @@ html, body {
     background: linear-gradient(180deg, #58126A 0%, #F6B2E1 100%);
 }
 
+hr{
+    margin-top: 50px;
+}
 .header {
     position: relative;
     display: flex;
@@ -39,7 +42,7 @@ html, body {
 }
 
 .product-name h1{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
@@ -54,8 +57,8 @@ html, body {
 }
 
 .product-img img{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     width: 500px;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -67,12 +70,98 @@ html, body {
 
 .description{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
 }
 
 .description p{
+    text-align: center;
+    max-width: 650px;
+}
+
+.text-01{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.first-feature{
+    color:#58126A;
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-feature aside{
+    margin-top: 0px;
+    margin-right: 60px;
+    max-width: 550px;
+    font-size: 20px;
     text-align: justify;
-    width: 600px;
-    
+}
+
+.first-feature aside h2{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.first-feature aside p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.first-feature video{
+    margin-right: 60px;
+    max-height: 450px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);;
+}
+
+.second-feature{
+    color:#58126A;
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.second-feature aside{
+    margin-top: 0px;
+    margin-left: 60px;
+    max-width: 550px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.second-feature aside h2{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.second-feature aside p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.second-feature video{
+    margin-left: 60px;
+    max-height: 450px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);;
 }
