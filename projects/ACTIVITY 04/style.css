@@ -1,0 +1,78 @@
+html, body {
+    background: linear-gradient(180deg, #58126A 0%, #F6B2E1 100%);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    align-items: center;
+    background-color: #1f1d1b;
+}
+
+.header img{
+    padding: 20px;
+    width: 200px;
+}
+
+.home-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover{
+    background-color: white;
+    color: #1f1d1b;
+}
+
+.product-name h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    color: white;
+    overflow: hidden;
+}
+
+.product-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-img img:hover{
+    transform: scale(1.2);
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description p{
+    text-align: justify;
+    width: 600px;
+    
+}

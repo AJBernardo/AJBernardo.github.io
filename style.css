@@ -1,6 +1,6 @@
     @font-face {
-        font-family: 'ByteBounce', sans-serif;
-        src: url('https://github.com/AJBernardo/AJBernardo.github.io/blob/master/fonts/ByteBounce.ttf') format('ttf');
+        font-family: 'ByteBounce';
+        src: url('fonts/ByteBounce.ttf') format('ttf');
         font-weight: normal;
         font-style: normal;
     }
@@ -79,7 +79,7 @@
 
     .project-button{
         text-align: center;
-        font-family: ByteBounce;
+        font-family: 'ByteBounce', sans-serif;
         font-size: 80px;
 
         margin-right: 20px;
