@@ -7,6 +7,10 @@ hr{
     margin-top: 50px;
     margin-bottom: 0px;
 }
+
+hr#formatted{
+    margin-top: 0px;
+}
 .header {
     position: relative;
     display: flex;
@@ -76,7 +80,7 @@ hr{
     text-align: center;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 16px;
-    color:#F6B2E1;
+    color:#dec7de;
 }
 
 .description p{
@@ -93,7 +97,7 @@ hr{
 }
 
 .first-feature{
-    color:#58126A;
+    color:#dec7de;
     margin-top: 50px;
     display: flex;
     justify-content: right;
@@ -143,7 +147,7 @@ hr{
 }
 
 .second-feature{
-    color:#58126A;
+    color:#dec7de;
     margin-top: 50px;
     display: flex;
     justify-content: left;
@@ -202,7 +206,6 @@ hr{
     margin-bottom: 30px;
     width: 70%;
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
 .color-selection img:hover{
@@ -246,8 +249,71 @@ hr{
 }
 
 .design-description img{
+    margin-bottom: -50px;
     max-width: 1500px;
 }
 
+.specs-section{
+    background: linear-gradient(123deg, #ABF8E7 6.41%, #8778C7 67.27%);
+}
+.specs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#specs-header{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: italic;
+    color: #58126A;
+}
 
+.specs img{
+    margin-top: 40px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+#price{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 24px;
+}
+
+.buy-button{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.buy-button button{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+
+    background-color:#ABF8E7;
+    color:#58126A;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button button:hover{
+    background-color:black;
+    color: white;
+}
+
+#footer{
+    text-align: center;
+    margin-bottom: 0px;
+}
