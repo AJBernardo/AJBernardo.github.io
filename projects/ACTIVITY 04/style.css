@@ -1,5 +1,6 @@
 html, body {
     background: linear-gradient(180deg, #58126A 0%, #F6B2E1 100%);
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr{
@@ -9,7 +10,7 @@ hr{
 .header {
     position: relative;
     display: flex;
-    justify-content: center; /* Centers the logo */
+    justify-content: center;
     align-items: center;
     background-color: #1f1d1b;
 }
@@ -24,7 +25,6 @@ hr{
     top: 20px;
     left: 20px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 20px;
 
@@ -45,7 +45,6 @@ hr{
 .product-name h1{
     margin-top: 30px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     color: white;
     overflow: hidden;
@@ -77,6 +76,7 @@ hr{
     text-align: center;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 16px;
+    color:#F6B2E1;
 }
 
 .description p{
@@ -84,10 +84,9 @@ hr{
     max-width: 650px;
 }
 
-.text-01{
+.text{
     text-align: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 120px;
     font-weight: 400;
     font-style: italic;
@@ -100,7 +99,6 @@ hr{
     justify-content: right;
     align-items: center;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .first-feature aside{
@@ -151,7 +149,6 @@ hr{
     justify-content: left;
     align-items: center;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .second-feature aside{
@@ -183,6 +180,7 @@ hr{
 }
 
 .color-selection{
+    box-shadow: 0 20px 24px rgba(0, 0, 0, 0.5);
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -194,7 +192,6 @@ hr{
 
 .color-selection h1{
     color: white;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -211,3 +208,46 @@ hr{
 .color-selection img:hover{
     transform: scale(1.2);
 }
+
+.design-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-section img{
+    margin-top: 80px;
+    max-width: 600px;
+}
+
+#two{
+    margin-top: 20px;
+    color: #58126A;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 140px;
+}
+
+#three{
+    font-size: 80px;
+}
+
+#four{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color:#58126A;
+}
+
+.design-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-description img{
+    max-width: 1500px;
+}
+
+
+
