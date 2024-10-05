@@ -40,12 +40,12 @@ body{
 }
 .video-container .row{
     margin: 0px;
-    max-height: 500px; 
+    max-height: 525px; 
 }
 
 .video-container .row video {
     padding: 0px;
-    max-height: 500px;
+    max-height: 525px;
     object-fit: cover;
     border: none;
 }
@@ -66,4 +66,26 @@ body{
     font-size: 18px;
 }
 
+.map-container{
+    max-width: 100%;
+}
+.map-container .row{
+    margin: 0px;
+    background-color: #407D91;
+}
+
+.col-6{
+    padding: 0px;
+}
+
+.col-6 img{
+    width: 100%;
+}
+
+.col{
+    margin: 150px 100px;
+    text-align: justify;
+    font-family: 'Charrington', sans-serif;
+    color: white;
+}
 
