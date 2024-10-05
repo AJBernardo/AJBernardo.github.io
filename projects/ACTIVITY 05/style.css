@@ -1,11 +1,13 @@
 body{
     background-color: #DFD7BB;
+    font-family: 'Brugenfield', sans-serif;
+    text-align: center;
 }
 .container-fluid{
     height: 50px;
     background-color: #8BAD9D;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .col-3{
@@ -36,7 +38,6 @@ body{
 
 .video-container{
     text-align: center;
-    font-family: 'Brugenfield', sans-serif;
 }
 .video-container .row{
     margin: 0px;
@@ -50,14 +51,18 @@ body{
     border: none;
 }
 
-.video-container h1{
+.video-container .col-6{
+    max-height: 500px;
+}
+
+.video-container h1 {
     font-weight: 600;
     font-size: 100px;
     text-shadow: 
-    3px 3px 0 rgba(255, 255, 255, 0.7), 
-    6px 6px 0 rgba(253, 255, 194, 0.7),
-    9px 9px 0 rgba(216, 144, 101, 0.7),
-    12px 12px 0 rgba(195, 108, 93, 0.7);
+        3px 3px 0 rgba(255, 255, 255, 0.7), 
+        6px 6px 0 rgba(253, 255, 194, 0.7),
+        9px 9px 0 rgba(216, 144, 101, 0.7),
+        12px 12px 0 rgba(195, 108, 93, 0.7);
 }
 
 .video-container p{
@@ -66,10 +71,11 @@ body{
     font-size: 18px;
 }
 
-.map-container{
+.content-container{
     max-width: 100%;
 }
-.map-container .row{
+
+.content-container .row{
     margin: 0px;
     background-color: #407D91;
 }
@@ -80,12 +86,157 @@ body{
 
 .col-6 img{
     width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.col{
-    margin: 150px 100px;
+.content-container .col{
+    align-content: center;
+    padding: 10px;
+}
+
+.content-container p{
     text-align: justify;
     font-family: 'Charrington', sans-serif;
     color: white;
+    font-size: 18px;
 }
 
+.map-container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.map-container-fluid h1{
+    /* text-align: center; */
+    font-size: 60px;
+    text-shadow: 
+        1px 1px 0 rgba(255, 255, 255, 0.7), 
+        2px 2px 0 rgba(253, 255, 194, 0.7),
+        3px 3px 0 rgba(216, 144, 101, 0.7),
+        4px 4px 0 rgba(195, 108, 93, 0.7);
+}
+
+.map-container-fluid .row{
+    margin: 0px;
+    padding: 20px;
+    max-width: 1200px;
+    background-color:#8BAD9D;
+    border-radius: 20px;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.5);
+}
+
+.map-container-fluid img{
+    border-radius: 20px;
+}
+.transpo-container .row{
+    padding: 0px;
+    margin: 0px;
+}
+.header-row{
+    margin: 30px 0px;
+}
+.header-row h1{
+    font-size: 80px;
+    text-shadow: 
+        1px 1px 0 rgba(255, 255, 255, 0.7), 
+        2px 2px 0 rgba(253, 255, 194, 0.7),
+        3px 3px 0 rgba(216, 144, 101, 0.7),
+        4px 4px 0 rgba(195, 108, 93, 0.7);
+}
+
+.col-4{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.card-body{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img{
+    max-height: 200px;
+    object-fit: cover;
+    
+}
+@media (max-width: 1200px) {
+    .col-3 button{
+        font-size: 18px;
+    }
+    .video-container h1 {
+        font-size: 80px;
+    }
+    .video-container p{
+        font-size: 16px;
+    }
+    .map-container-fluid h1{
+        font-size: 50px;
+    }
+    .content-container p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-3 button{
+        font-size: 16px;
+    }
+    .video-container h1 {
+        font-size: 60px;
+    }
+    .video-container p{
+        font-size: 14px;
+    }
+    .map-container-fluid h1{
+        font-size: 40px;
+    }
+    .content-container p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-3 button{
+        font-size: 14px;
+    }
+    .video-container h1 {
+        font-size: 40px;
+    }
+    .video-container p{
+        font-size: 12px;
+    }
+    .map-container-fluid h1{
+        font-size: 30px;
+    }
+    .content-container p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3 button{
+        font-size: 12px;
+    }
+    .video-container h1 {
+        font-size: 30px;
+        text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.7), 
+        4px 4px 0 rgba(253, 255, 194, 0.7),
+        6px 6px 0 rgba(216, 144, 101, 0.7),
+        8px 8px 0 rgba(195, 108, 93, 0.7);
+    }
+    .video-container p{
+        font-size: 10px;
+    }
+    .map-container-fluid h1{
+        font-size: 20px;
+    }
+    .content-container p{
+        font-size: 10px;
+    }
+}
