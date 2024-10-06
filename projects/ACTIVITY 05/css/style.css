@@ -3,34 +3,6 @@ body{
     font-family: 'Brugenfield', sans-serif;
     text-align: center;
 }
-.container-fluid{
-    height: 50px;
-    background-color: #8BAD9D;
-    font-family: "Montserrat", sans-serif;
-    /* text-align: center; */
-}
-
-.col-3{
-    padding: 0px;
-}
-
-.col-3 button{
-    height: 50px;
-    width: 100%;
-    font-weight: 400;
-    font-size: 20px;
-
-    background-color: transparent;
-    color: #DFD7BB;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.col-3 button:hover{
-    background-color: white;
-    color: #1f1d1b;
-}
 
 .col-3 img{
     max-width: 100%;
@@ -165,9 +137,6 @@ body{
     
 }
 @media (max-width: 1200px) {
-    .col-3 button{
-        font-size: 18px;
-    }
     .video-container h1 {
         font-size: 80px;
     }
@@ -183,9 +152,6 @@ body{
 }
 
 @media (max-width: 992px) {
-    .col-3 button{
-        font-size: 16px;
-    }
     .video-container h1 {
         font-size: 60px;
     }
@@ -201,9 +167,6 @@ body{
 }
 
 @media (max-width: 768px) {
-    .col-3 button{
-        font-size: 14px;
-    }
     .video-container h1 {
         font-size: 40px;
     }
@@ -219,9 +182,6 @@ body{
 }
 
 @media (max-width: 576px) {
-    .col-3 button{
-        font-size: 12px;
-    }
     .video-container h1 {
         font-size: 30px;
         text-shadow: 
