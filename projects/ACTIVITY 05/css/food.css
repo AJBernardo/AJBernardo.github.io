@@ -33,17 +33,15 @@ body{
     margin-bottom: 30px;
 }
 
-.menu-items-container{
-    text-align: justify;
-}
-
 .content-container .row{
+    justify-content: center;
     margin: 0px;
-    padding: 0px;
 }
 .content-container img{
     padding: 0px;
     max-width: 1000px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 .content-container p{
@@ -52,4 +50,156 @@ body{
     font-weight: 700;
     font-size: 20px;
     text-align: justify;
+}
+
+.carousel button{
+    margin: 0px 200px;
+}
+
+.menu-items-container .row{
+    margin: 0px 140px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.menu-items-container .title{
+    margin: 20px 0px;
+}
+
+.dish-name{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 400;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.dish-photo{
+    margin-bottom: 20px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.dish-description{
+    font-family: 'Charrington', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .title {
+        font-size: 70px;
+    }
+    .description-row{
+        margin: 0px 100px;
+        font-size: 18px;
+    }
+    .content-container p{
+        margin: 15px 150px;
+        font-size: 18px;
+    }
+    .carousel button{
+        margin: 0px 60px;
+    }
+    .menu-items-container .row{
+        margin: 0px 100px;
+        margin-top: 40px;
+    }
+    .dish-name{
+        font-size: 50px;
+    }
+    .dish-description{
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 60px;
+    }
+    .description-row{
+        margin: 0px 75px;
+        font-size: 16px;
+    }
+    .content-container p{
+        margin: 10px 100px;
+        font-size: 16px;
+    }
+    .carousel button{
+        margin: 0px 40px;
+    }
+    .menu-items-container .row{
+        margin: 0px 60px;
+        margin-top: 30px;
+    }
+    .dish-name{
+        font-size: 40px;
+    }
+    .dish-description{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 50px;
+    }
+    .description-row{
+        margin: 0px 50px;
+        font-size: 14px;
+    }
+    .content-container p{
+        margin: 10px 75px;
+        font-size: 14px;
+    }
+    .carousel button{
+        margin: 0px 20px;
+    }
+    .menu-items-container .row{
+        margin: 0px 20px;
+        margin-top: 20px;
+    }
+    .dish-name{
+        font-size: 30px;
+    }
+    .dish-description{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 40px;
+        text-shadow: 
+        1px 1px 0 rgba(255, 255, 255, 0.7), 
+        2px 2px 0 rgba(253, 255, 194, 0.7),
+        3px 3px 0 rgba(216, 144, 101, 0.7),
+        4px 4px 0 rgba(195, 108, 93, 0.7);
+    }
+    .description-row{
+        margin: 0px 25px;
+        font-size: 12px;
+    }
+    .content-container p{
+        margin: 5px 25px;
+        font-size: 12px;
+    }
+    .carousel button{
+        margin: 0px 10px;
+    }
+    .menu-items-container .row{
+        margin: 0px 5px;
+        margin-top: 10px;
+    }
+    .dish-name{
+        font-size: 20px;
+    }
+    .dish-description{
+        font-size: 12px;
+    }
+    
 }
