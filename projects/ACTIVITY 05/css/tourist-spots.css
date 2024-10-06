@@ -37,17 +37,45 @@ body{
     margin: 0px 150px;
 }
 
-.tourist-spots-container .row{
-    height: 500px;
-}
-
 .col-md-6{
+    display: flex;
     margin: 10px 0px;
+    max-height: 100%;
 }
 .card{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
+
+.card .btn{
+    background-color: #A4BEA0;
+    color: white;
+    font-weight: 500;
+}
+
+.card .btn:hover{
+    background-color: black;
+    color: #DFD7BB;
+}
+
+.card img{
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.last-container{
+    margin: 0px 150px;
+    text-align: justify;
+}
+.last-container .row{
+    margin-top: 60px;
+}
+.last-container p{
+    font-family: 'Charrington', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 
 @media (max-width: 1200px) {
     .title {
@@ -57,6 +85,9 @@ body{
         font-size: 18px;
     }
     .tourist-spots-container{
+        margin: 0px 125px;
+    }
+    .last-container{
         margin: 0px 125px;
     }
 }
@@ -71,6 +102,9 @@ body{
     .tourist-spots-container{
         margin: 0px 100px;
     }
+    .last-container{
+        margin: 0px 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -81,6 +115,9 @@ body{
         font-size: 14px;
     }
     .tourist-spots-container{
+        margin: 0px 75px;
+    }
+    .last-container{
         margin: 0px 75px;
     }
 }
@@ -103,6 +140,9 @@ body{
     .tourist-spots-container .row{
         margin: 0px 0px;
         margin-bottom: 50px;
+    }
 
+    .last-container{
+        margin: 0px 50px;
     }
 }

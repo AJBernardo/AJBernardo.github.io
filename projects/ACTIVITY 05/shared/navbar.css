@@ -27,6 +27,12 @@
     color: #1f1d1b;
 }
 
+footer{
+    background-color: #8BAD9D;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+}
+
 @media (max-width: 1200px) {
     .col-3 button{
         font-size: 18px;
