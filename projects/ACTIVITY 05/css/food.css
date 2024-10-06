@@ -32,3 +32,24 @@ body{
     font-family: 'Charrington', sans-serif;
     margin-bottom: 30px;
 }
+
+.menu-items-container{
+    text-align: justify;
+}
+
+.content-container .row{
+    margin: 0px;
+    padding: 0px;
+}
+.content-container img{
+    padding: 0px;
+    max-width: 1000px;
+}
+
+.content-container p{
+    margin: 20px 250px;
+    font-family: 'Charrington', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+}
