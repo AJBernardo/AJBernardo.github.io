@@ -38,10 +38,12 @@ body{
 }
 
 .tourist-spots-container .row{
-    margin: 20px 0px;
     height: 500px;
 }
 
+.col-md-6{
+    margin: 10px 0px;
+}
 .card{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
