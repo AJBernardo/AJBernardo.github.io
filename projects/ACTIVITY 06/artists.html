@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/roboto-condensed-3" rel="stylesheet">
   <link href="shared/navbar.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
+  <link href="css/artists.css" rel="stylesheet">
 </head>
 
 <!-- THIS IS WHERE THE BODY STARTS -->
@@ -33,30 +33,103 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="artists.html">ARTISTS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">ABOUT</a>
-        </li>
       </ul>
       <button class="mode" onclick="changeColorMode()">MODE</button>
     </div>
   </nav>
 
+  <!-- ARTISTS SELECTION -->
+  <div class="artists container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-12 border-end py-5 p-0" id="artists-column"></div>
+      <div class=" artist-photobox col-md-4 col-12 py-5">
+        <div class="artist-photo container">
+          <img id= "artist-photo" src="img/becky.png">
+        </div>
+      </div>
+      <div class="artist-info col-md-6 col-12 py-5 pe-5">
+        <div class="row">
+          <h1 class="diplay-1" id="artist-name">Becky Rebecca</h1>
+          <h5 id="full-name">Rebecca Patricia Armstrong</h5>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6">
+            <h6>Played</h6>
+            <p id="roles">Fon, “Mon” Kornkamon, "Anin" Aninlaphat Sawettawarit</p>
+          </div>
+          <div class="col-6">
+            <h6>Series</h6>
+            <p id="series">Secret Crush On You (2022), GAP: The Series (2022), The Loyal Pin (2024)</p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6">
+            <h6>Birthday</h6>
+            <p id="birthday">December 5, 2002</p>
+          </div>
+          <div class="col-6">
+            <h6>Zodiac Sign</h6>
+            <p id="zodiac-sign">Sagittarius</p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <p id="intro">Rebecca Patricia Armstrong is a Thai-British actress, singer, and model. Armstrong began her acting career with the drama series TharnType 2: 7 Years of Love. She received greater recognition for starring in the drama Gap: The Series and the romance comedy movie Long Live Love!.</p>
+        </div>
+        <div class="row" id="photo-gallery">
+          <div class="col-4">
+            <div class="gallery-item">
+              <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo1">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="first-photo"  onmouseover="crossFadeEffect('first-photo')" onmouseout="resetImage('first-photo')">
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="gallery-item">
+              <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo2">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="second-photo"  onmouseover="crossFadeEffect('second-photo')" onmouseout="resetImage('second-photo')">
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="gallery-item">
+              <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo3">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="third-photo"  onmouseover="crossFadeEffect('third-photo')" onmouseout="resetImage('third-photo')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-between m-5 border-top">
+      <p>&copy; 2024 IdolFactory. All rights reserved. For Educational Purposes Only</p>
       <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi bi-instagram" width="24" height="24">
-              <use xlink:href="#twitter" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a></li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://x.com/IDOLFACTORYTH">
+            <i class="bi bi-twitter-x" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://www.instagram.com/idolfactoryth/?hl=en">
+            <i class="bi bi-instagram" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://web.facebook.com/idolfactoryth">
+            <i class="bi bi-facebook" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="www.youtube.com/@IDOLFACTORY">
+            <i class="bi bi-youtube" style="font-size: 24px;"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
+
+  <script src="js/artists.js"></script>
   <script src="js/home.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

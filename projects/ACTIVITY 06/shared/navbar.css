@@ -15,6 +15,7 @@ body{
 }
 
 .navbar-collapse {
+    background-color: white;
     position: relative;
     z-index: 1000;
 }
@@ -28,4 +29,9 @@ body{
     background-color: transparent;
     border: none;
     margin-right: 50px;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
 }

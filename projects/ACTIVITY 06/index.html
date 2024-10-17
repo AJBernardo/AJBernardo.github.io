@@ -33,9 +33,6 @@
         <li class="nav-item">
           <a class="nav-link" href="artists.html">ARTISTS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">ABOUT</a>
-        </li>
       </ul>
       <button class="mode" onclick="changeColorMode()">MODE</button>
     </div>
@@ -46,10 +43,6 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/picture1.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Your Heading Here</h5>
-          <p>Your text here...</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="img/picture2.png" class="d-block w-100" alt="...">
@@ -91,7 +84,7 @@
       interactions to keep our audience at the heart of every project. This approach ensures that our content remains
       relevant and impactful, reflecting the experiences and voices of our diverse community
     </p>
-    <button class="btn btn-outline-secondary my-5">Learn More</button>
+    <a href="https://www.instagram.com/idolfactoryth/?hl=en"><button class="btn btn-outline-secondary my-5">Learn More</button></a> 
   </div>
 
   <!-- EMBEDDED YOUTUBE VIDEO -->
@@ -107,12 +100,18 @@
   </div>
 
   <!-- LIST OF THE SHOWS -->
-  <div class="shows container border-top">
+  <div class="shows container border-top my-5">
     <div class="row" id="showsList">
       <h1 class="display-1 mt-4">SHOWS</h1>
       <p class="mb-5">Explore our lineup of shows and get ready to experience a journey of passion, love, and
         unforgettable moments!</p>
     </div>
+  </div>
+
+  <!-- OST GALLERY -->
+  <div class="ost container border-top my-5" id="ost-container">
+    <h1 class="display-1">IDOLFACTORY OST GALLERY</h1>
+
   </div>
 
   <!-- ARTISTS' SCHEDULE -->
@@ -121,22 +120,37 @@
       <img src="img/sched.jpg" alt="artists' schedule">
     </div>
   </div>
+
+
   <footer>
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-between m-5 border-top">
+      <p>&copy; 2024 IdolFactory. All rights reserved. For Educational Purposes Only</p>
       <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi bi-instagram" width="24" height="24">
-              <use xlink:href="#twitter" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a></li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://x.com/IDOLFACTORYTH">
+            <i class="bi bi-twitter-x" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://www.instagram.com/idolfactoryth/?hl=en">
+            <i class="bi bi-instagram" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://web.facebook.com/idolfactoryth">
+            <i class="bi bi-facebook" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="www.youtube.com/@IDOLFACTORY">
+            <i class="bi bi-youtube" style="font-size: 24px;"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
+
+
   <script src="js/home.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
