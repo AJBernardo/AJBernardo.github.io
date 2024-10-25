@@ -46,8 +46,8 @@
 
 .shows-item {
     position: relative;
-    width: 400px; /* Specify the width of the container */
-    height: 400px; /* Specify the height of the container */
+    width: 400px;
+    height: 400px;
     margin: auto;
 }
 
@@ -59,7 +59,7 @@
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
-    transition: opacity 0.5s ease; /* Adjust the duration of the fade here */
+    transition: opacity 0.5s ease;
 }
 .ost{
     text-align: start;
