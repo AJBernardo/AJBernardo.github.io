@@ -1,12 +1,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    
+    background-color: #212B38;
 }
 
 .navbar{
     background-color: #212B38;
     font-weight: 400;
-
 }
 
 .nav-link{
@@ -21,3 +20,112 @@ body{
     background-color: #A9925D;
     color: white;
 }
+
+.intro-vid {
+    margin: 0;
+    margin-top: 62px;
+    padding: 0; 
+    object-fit: cover;
+    filter: brightness(0.50) contrast(1.2);
+    z-index: 0;
+    max-height: 700px;
+}
+
+.title{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.about {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.emblem{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.description{
+    font-family: 'Queen Sansson', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.ledger-content {
+    background: url(assets/img/bg-dimmed.png) no-repeat center center;
+    background-size: cover;   
+    color: #fff4c2;
+}
+
+.ledger-content h2 {
+    font-weight: 600;
+}
+
+.btn{
+    border-radius: 50px;
+    border: 3px solid #A9925D;
+    background-color: #fff4c2;
+    color: #401717;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 3px solid #A9925D;
+}
+
+.footer{
+    color: white;
+    font-size: 14px;
+}
+@media (max-width: 870px) {
+    .title{
+        top: 100px;
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title{
+        top: 100px;
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+
+
