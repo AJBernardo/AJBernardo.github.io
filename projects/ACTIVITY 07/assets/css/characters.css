@@ -1,0 +1,92 @@
+body{
+    margin-top: 62px;
+}
+
+.cover{
+    background-color: #344458;
+    /* filter: brightness(0.50) contrast(1.2); */
+}
+
+.btn-gryffindor, .btn-slytherin, .btn-hufflepuff, .btn-ravenclaw{
+    width: 300px;
+    height: 300px;
+    background-size: cover;   
+    border: 7px solid #212B38;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gryffindor:hover, .btn-slytherin:hover, .btn-hufflepuff:hover, .btn-ravenclaw:hover{
+    background-color: #212B38;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.btn-gryffindor{
+    background: url(../img/gryffindor.png) no-repeat center center;
+}
+
+.btn-slytherin{
+    background: url(../img/slytherin.png) no-repeat center center;
+}
+
+.btn-hufflepuff{
+    background: url(../img/hufflepuff.png) no-repeat center center;
+}
+
+.btn-ravenclaw{
+    background: url(../img/ravenclaw.png) no-repeat center center;
+}
+
+.characters-gallery{
+    background-color: #344458;
+}
+
+.character-card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 10px;
+    background: url(../media/universe.gif) no-repeat center center;
+    background-size: cover;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.char-image{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 180px;
+    height: 223px;
+    object-fit: cover;
+    object-position: top;
+    z-index: 1;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.btn-character{
+    position: absolute;
+    font-size: 14px;
+    top: 240px;
+    left: 10px;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+.btn-character:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}

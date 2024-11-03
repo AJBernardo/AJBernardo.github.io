@@ -1,0 +1,27 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    background-color: #212B38;
+    font-weight: 400;
+}
+
+.nav-link{
+    color: white;
+}
+z
+.nav-link:hover{
+    color: #A9925D;
+}
+
+.navbar-toggler, .navbar-toggler-icon{
+    background-color: #A9925D;
+    color: white;
+}
+
+.footer{
+    color: white;
+    font-size: 14px;
+    background-color: #212B38;
+    text-align: center;
+}
