@@ -45,8 +45,8 @@ body{
 
 .character-card{
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     background-color: grey;
     border-radius: 10px;
     background: url(../media/universe.gif) no-repeat center center;
@@ -60,10 +60,10 @@ body{
 
 .char-image{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 180px;
-    height: 223px;
+    top: 13px;
+    left: 15px;
+    width: 270px;
+    height: 293px;
     object-fit: cover;
     object-position: top;
     z-index: 1;
@@ -73,11 +73,11 @@ body{
 
 .btn-character{
     position: absolute;
-    font-size: 14px;
-    top: 240px;
+    font-size: 18px;
+    top: 319px;
     left: 10px;
-    width: 180px;
-    height: 50px;
+    width: 270px;
+    height: 68px;
     border-radius: 5px;
     border: 2px solid white;
     background-color: black;

@@ -33,9 +33,6 @@
                     <li class="nav-item me-4">
                         <a class="nav-link" href="spells.html">SPELLS</a>
                     </li>
-                    <li class="nav-item me-4">
-                        <a class="nav-link" href="potions.html">POTIONS</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -64,16 +61,16 @@
                 whole new way. Let the adventure begin!</p>
         </div>
         <div class="houses-list row mt-4">
-            <div class="col-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mt-3 d-flex justify-content-center">
                 <button class="btn-gryffindor" onclick="expandGallery('gryffindor')"></button>
             </div>
-            <div class="col-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mt-3 d-flex justify-content-center">
                 <button class="btn-slytherin" onclick="expandGallery('slytherin')"></button>
             </div>
-            <div class="col-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mt-3 d-flex justify-content-center">
                 <button class="btn-hufflepuff" onclick="expandGallery('hufflepuff')"></button>
             </div>
-            <div class="col-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mt-3 d-flex justify-content-center">
                 <button class="btn-ravenclaw" onclick="expandGallery('ravenclaw')"></button>
             </div>
         </div>
@@ -122,10 +119,10 @@
                     const character = gryffindorCharacters[i];
 
                     characterList.innerHTML +=
-                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 d-flex justify-content-center align-items-center my-3">
+                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center my-3">
                         <div class="character-card">
                             <img src="` + character.attributes.image + `" alt="` + character.attributes.name + `" class="char-image">
-                            <a href=""><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
+                            <a href="view.html?id=` + character.id + `" target="_blank"><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
                         </div>
                     </div>`;
                 }
@@ -146,10 +143,10 @@
                     const character = slytherinCharacters[i];
 
                     characterList.innerHTML +=
-                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 d-flex justify-content-center align-items-center my-3">
+                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center my-3">
                         <div class="character-card">
                             <img src="` + character.attributes.image + `" alt="` + character.attributes.name + `" class="char-image">
-                            <a href=""><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
+                            <a href="view.html?id=` + character.id + `" target="_blank"><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
                         </div>
                     </div>`;
                 }
@@ -170,10 +167,10 @@
                     const character = hufflepuffCharacters[i];
 
                     characterList.innerHTML +=
-                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 d-flex justify-content-center align-items-center my-3">
+                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center my-3">
                         <div class="character-card">
                             <img src="` + character.attributes.image + `" alt="` + character.attributes.name + `" class="char-image">
-                            <a href=""><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
+                            <a href="view.html?id=` + character.id + `" target="_blank"><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
                         </div>
                     </div>`;
                 }
@@ -194,10 +191,10 @@
                     const character = ravenclawCharacters[i];
 
                     characterList.innerHTML +=
-                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 d-flex justify-content-center align-items-center my-3">
+                        `<div class="character col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center align-items-center my-3">
                         <div class="character-card">
                             <img src="` + character.attributes.image + `" alt="` + character.attributes.name + `" class="char-image">
-                            <a href=""><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
+                            <a href="view.html?id=` + character.id + `" target="_blank"><button class='btn btn-character' id="btn-character">` + character.attributes.name + `</button></a>
                         </div>
                     </div>`;
                 }
