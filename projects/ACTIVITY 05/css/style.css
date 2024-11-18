@@ -149,6 +149,9 @@ body{
     .content-container p{
         font-size: 16px;
     }
+    .header-row h1{
+        font-size: 60px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -163,6 +166,9 @@ body{
     }
     .content-container p{
         font-size: 14px;
+    }
+    .header-row h1{
+        font-size: 40px;
     }
 }
 
@@ -179,6 +185,9 @@ body{
     .content-container p{
         font-size: 12px;
     }
+    .header-row h1{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -194,9 +203,12 @@ body{
         font-size: 10px;
     }
     .map-container-fluid h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     .content-container p{
         font-size: 10px;
+    }
+    .header-row h1{
+        font-size: 30px;
     }
 }

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chess Citadel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- NAVBAR SETTINGS -->
+    <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand p-0" href="#">
+                <img src="assets/img/brand.png" alt="Chess Citadel">
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggle" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="">HISTORY</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="">OPENINGS</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="">TOURNAMENTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover container-fluid p-0">
+        <img src="assets/img/cover.svg" alt="Chess Citadel" class="img-fluid">
+        <h1 class="title">CHESS<br>CITADEL</h1>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- <img src="assets/img/logo.png" alt="Chess Citadel"> -->
+            <div class="col-12 col-md-8">
+                <p class="px-3"><strong>Chess Citadel</strong> is a premier online platform dedicated to celebrating the
+                    timeless
+                    game of chess.
+                    Whether you're a beginner exploring the basics, a seasoned player refining your strategies, or an
+                    enthusiast captivated by the rich history and culture of chess, Chess Citadel offers something for
+                    everyone.
+                </p>
+
+                <p class="px-3">
+                    Dive into expertly curated content on legendary tournaments, masterful openings, and the stories of
+                    iconic grandmasters. With a sleek, user-friendly design and immersive features, Chess Citadel serves
+                    as your gateway to the fascinating world of chess—blending tradition with innovation to inspire
+                    players of all skill levels.
+                </p>
+
+                <!-- Adjust iframe styling and autoplay -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="vid-holder col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe class="responsive-iframe"
+                                    src="https://www.youtube.com/embed/p73QbqTSjpQ?autoplay=1&start=4&end=73"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-4 px-2">
+                <div class="card h-100">
+                    <!-- NEWS HEAEDER -->
+                    <div class="news-header p-0">
+                        <h1 class="display-3">NEWS</h1>
+                    </div>
+
+                    <!-- NEWS ARTICLES -->
+                    <div class="news-content" id="news-content">
+                        <!-- News Articles will be injected here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <img src="assets/img/logo.png" alt="Chess Citadel" class="logo">
+        </div>
+    </div> -->
+    
+    <div class="history container p-0">
+        <!-- <img src="assets/img/history-cover.svg" alt="" class="img-fluid w-100"> -->
+        <h1 class="display-1">HISTORY</h1>
+
+    </div>
+
+    <div class="container">
+        <iframe id="12390955" allowtransparency="true" frameborder="0" style="width:100%;border:none;"
+        src="//www.chess.com/emboard?id=12390955"></iframe>
+    </div>
+    <script
+        nonce="chesscom-diagram">window.addEventListener("message", e => { e['data'] && "12390955" === e['data']['id'] && document.getElementById(`${e['data']['id']}`) && (document.getElementById(`${e['data']['id']}`).style.height = `${e['data']['frameHeight'] + 37}px`) });</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        var newsInfos = [
+            ["news1", "16", "Carlsen Crosses 2900 But Arjun, Praggnanandhaa Hit Back", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-4"], 
+            ["news2", "16", "Nakamura Secures Historic Bullet Brawl And Titled Tuesday Trifecta", "https://www.chess.com/news/view/hikaru-nakamura-wins-bullet-brawl-november-16-2024"],
+            ["news3", "15", "Giri Scores 1st-Ever Victory For 'Stars,' Drops Only Loss To Alice Lee", "https://www.chess.com/news/view/2024-kids-vs-stars-giri-vs-4-super-talents"],
+            ["news4", "15", "Carlsen, Goryachkina Win Tata Steel India Rapid With Round To Spare", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-3"],
+            ["news5", "14", "Carlsen Beats So, Arjun To Snatch Sole Lead", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-2"],
+            ["news6", "13", "Abdusattorov Leads Carlsen, So, Narayanan As Tata Steel Chess India Begins", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-1"]
+        ];
+        var newsContent = document.getElementById("news-content");
+
+        newsInfos.forEach((newsInfo) => {
+            newsContent.innerHTML += `
+                <div class="card m-3">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-5 p-0">
+                                <div class="container-fluid m-1 h-100" style="max-height: -webkit-fill-available;">
+                                    <img src="assets/img/${newsInfo[0]}.png" alt="News Image" class="img-fluid img-column">
+                                </div>
+                            </div>
+                            <div class="col-7 card-body ps-1 pe-4">
+                                <p class="card-date mb-0">November ${newsInfo[1]}, 2024</p>
+                                <h6 class="card-title text-baseline">${newsInfo[2]}</h6>
+                                <a href="${newsInfo[3]}" target="_blank" class="btn">See article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+        });
+        document.addEventListener("scroll", () => {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 100) {
+                navbar.style.opacity = "1";
+                navbar.style.visibility = "visible";
+            } else {
+                navbar.style.opacity = "0";
+                navbar.style.visibility = "hidden";
+            }
+        });
+
+        //CUSTOM TOGGLE
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarNav = document.getElementById('navbarNav');
+
+        navbarToggle.addEventListener('click', function () {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            navbarNav.classList.toggle('show', !isExpanded);
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // CLOSE NAVBAR WHEN CLICKED
+        const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+
+                navbarNav.classList.remove('show');
+                navbarToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

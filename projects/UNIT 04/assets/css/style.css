@@ -1,0 +1,152 @@
+body {
+    font-family: "Merida Regular", sans-serif;
+}
+
+.navbar {
+    background-color: #916B58;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-link {
+    color: #DBAF96;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+    background-color: #5F3E37;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: clamp(15%, 40.29vh, 40%);
+    left: clamp(10%, 13.68vw, 15%);
+    z-index: 100;
+    font-size: clamp(24px, 6.51vw, 100px);
+    color: #DBAF96;
+}
+
+.vid-holder {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.responsive-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(14px, 2.5vw, 20px);
+    text-align: justify;
+}
+
+.news-header{
+    max-height: 100px;
+    background-color: #916B58;
+    color: #DBAF96;
+    text-align: center;
+    border-radius: 0.375rem;
+    margin: 3px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-column {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.card-body{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-date{
+    color: gray;
+    font-size: 12px;
+}
+
+.news-content {
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.news-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-content::-webkit-scrollbar-thumb {
+    background-color: #916B58;
+    border-radius: 4px;
+}
+
+.news-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.btn{
+    background-color: #916B58;
+    color: #DBAF96;
+}
+
+.btn:hover{
+    background-color: #DBAF96;
+    color: #5F3E37;
+}
+
+.history{
+    background: url(../img/watermark.png) no-repeat bottom center;
+    background-color: #5F3E37;
+    color: #DBAF96;
+}
+
+
+
+@media (max-width: 1200px) {
+    .title {
+        top: clamp(18%, 35vh, 40%);
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        top: clamp(15%, 30vh, 35%);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        top: clamp(13%, 25vh, 30%);
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        top: clamp(10%, 20vh, 25%);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        top: clamp(10%, 18vh, 22%);
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        top: clamp(5%, 15vh, 20%);
+    }
+}
+
