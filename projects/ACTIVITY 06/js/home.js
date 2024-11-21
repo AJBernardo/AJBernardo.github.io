@@ -33,7 +33,7 @@ for (var i = 0; i < shows.length; i++) {
 
     showsList.innerHTML +=
     `<div class="col-lg-4 col-sm-6 col-12 mb-5">
-        <div class="shows-item">
+        <div class="shows-item container-fluid">
           <img class="shadow" src="img/${hoverPosters[i]}" alt="SCOY" id="hover-poster${i}">
           <img class="shadow" src="img/${showsPosters[i]}" alt="SCOY" id="poster${i}"  onmouseover="crossFadeEffect('poster${i}')" onmouseout="resetImage('poster${i}')")> 
         </div>

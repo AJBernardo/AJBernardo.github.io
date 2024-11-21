@@ -29,12 +29,6 @@
     font-weight: 300;
                                                 
 }
-/* 
-.shows-item img {
-    
-    object-fit: cover;
-    border-radius: 20px;
-} */
 
 .expanded-info{
     background-color: #b0c1d8;
@@ -46,21 +40,24 @@
 
 .shows-item {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    padding-top: 100%;
     margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .shows-item img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
     transition: opacity 0.5s ease;
 }
+
 .ost{
     text-align: start;
     font-weight: 400;
