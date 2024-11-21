@@ -18,7 +18,7 @@
     <!-- NAVBAR SETTINGS -->
     <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
         <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand p-0" href="#">
+            <a class="navbar-brand p-0" href="index.html">
                 <img src="assets/img/brand.png" alt="Chess Citadel">
             </a>
             <button class="navbar-toggler" type="button" id="navbarToggle" aria-expanded="false"
@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="">HISTORY</a>
+                        <a class="nav-link" aria-current="page" href="#news">NEWS</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="">OPENINGS</a>
+                        <a class="nav-link" href="#openings-nav">OPENINGS</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="">TOURNAMENTS</a>
+                        <a class="nav-link" href="#daily-puzzle">DAILY PUZZLE</a>
                     </li>
                 </ul>
             </div>
@@ -46,26 +46,24 @@
         <h1 class="title">CHESS<br>CITADEL</h1>
     </div>
 
-    <div class="container my-5">
-        <div class="row">
-            <!-- <img src="assets/img/logo.png" alt="Chess Citadel"> -->
-            <div class="col-12 col-md-8">
-                <p class="px-3"><strong>Chess Citadel</strong> is a premier online platform dedicated to celebrating the
-                    timeless
-                    game of chess.
-                    Whether you're a beginner exploring the basics, a seasoned player refining your strategies, or an
-                    enthusiast captivated by the rich history and culture of chess, Chess Citadel offers something for
+    <div class="container my-5" id="news">
+        <div class="descrip row">
+            <div class="col-12 col-lg-8">
+                <p class="px-3"><strong>Chess Citadel</strong>
+                    is a premier online platform dedicated to the fascinating world of chess openings. Whether you're a
+                    beginner exploring fundamental principles, a seasoned player refining your repertoire, or an
+                    enthusiast captivated by the theory behind the first moves, Chess Citadel offers something for
                     everyone.
                 </p>
 
                 <p class="px-3">
-                    Dive into expertly curated content on legendary tournaments, masterful openings, and the stories of
-                    iconic grandmasters. With a sleek, user-friendly design and immersive features, Chess Citadel serves
-                    as your gateway to the fascinating world of chess—blending tradition with innovation to inspire
-                    players of all skill levels.
+                    Dive into expertly curated content on classic openings like the Ruy-Lopez and Sicilian Defense,
+                    modern strategies like the English Opening, and the evolution of opening theory. With a sleek,
+                    user-friendly design and immersive features, Chess Citadel serves as your gateway to mastering the
+                    critical first phase of chess—blending tradition with innovation to inspire players of all skill
+                    levels.
                 </p>
 
-                <!-- Adjust iframe styling and autoplay -->
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="vid-holder col-12">
@@ -82,7 +80,7 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-4 px-2">
+            <div class="col-12 col-lg-4 px-2 news-container">
                 <div class="card h-100">
                     <!-- NEWS HEAEDER -->
                     <div class="news-header p-0">
@@ -98,22 +96,95 @@
         </div>
     </div>
 
-    <!-- <div class="container">
-        <div class="row">
-            <img src="assets/img/logo.png" alt="Chess Citadel" class="logo">
+    <div class="history container-fluid">
+
+        <div class="row p-0 pt-5">
+            <div class="col-3">
+                <div class="row h-50 p-0"></div>
+                <div class="bordered row p-0"></div>
+            </div>
+            <div class="col-6">
+                <h1 class="opening-header text-center">OPENINGS</h1>
+            </div>
+            <div class="col-3">
+                <div class="row h-50 p-0"></div>
+                <div class="bordered row p-0"></div>
+            </div>
         </div>
-    </div> -->
-    
-    <div class="history container p-0">
-        <!-- <img src="assets/img/history-cover.svg" alt="" class="img-fluid w-100"> -->
-        <h1 class="display-1">HISTORY</h1>
+
+        <div class="row p-0 mx-auto">
+            <div class="about-opening col py-5">
+                <h1>WHAT IS A CHESS OPENING?</h1>
+                <p>A chess opening is the initial phase of a chess game, typically encompassing the first 10-15 moves.
+                    It
+                    focuses on developing pieces, controlling the center of the board, ensuring king safety (often
+                    through
+                    castling), and preparing for a strong middlegame. Effective openings aim to achieve a harmonious
+                    position, minimize weaknesses, and create opportunities for both attack and defense. There are
+                    thousands
+                    of recognized opening variations, each with unique strategic ideas and plans.</p>
+            </div>
+        </div>
+
+        <div class="row p-0 mx-auto">
+            <div class="openings col-12 col-md-4 text-center">
+                <img src="assets/img/lopez.gif" alt="Ruy López Opening" class="img-fluid rounded">
+                <h5 class="mt-2">Ruy López Opening</h5>
+            </div>
+
+            <div class="openings col-12 col-md-4 text-center">
+                <img src="assets/img/king.gif" alt="King's Gambit Opening" class="img-fluid rounded">
+                <h5 class="mt-2">King's Gambit Opening</h5>
+            </div>
+
+            <div class="openings col-12 col-md-4 text-center">
+                <img src="assets/img/queen.gif" alt="Queen's Gambit Opening" class="img-fluid rounded">
+                <h5 class="mt-2">Queen's Gambit Opening</h5>
+            </div>
+        </div>
+
+        <div class="tutorial row">
+            <h1 class="opening-header text-center">A BEGINNER'S GUIDE TO CHESS OPENINGS</h1>
+
+            <div class="col">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="vid-holder col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/6IegDENuxU4?si=dvbtgn0tftClVwN5"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="openings-nav row text-center d-flex justify-content-center align-items-center flex-wrap"
+            id="openings-nav">
+            <h1 class="opening-header text-center" style="color: rgb(219, 175, 150);">FAMOUS CHESS OPENINGS</h1>
+        </div>
+
+        <div class="opening-list row" id="opening-list">
+            
+        </div>
 
     </div>
 
-    <div class="container">
+    <div class="daily-puzzle container-fluid" id="daily-puzzle">
+        <h1 class="opening-header-puzzle text-center">DAILY CHESS PUZZLE</h1>
         <iframe id="12390955" allowtransparency="true" frameborder="0" style="width:100%;border:none;"
-        src="//www.chess.com/emboard?id=12390955"></iframe>
+            src="//www.chess.com/emboard?id=12390955"></iframe>
     </div>
+
+    <footer class="border-top">
+        <h6 id="footer">&copy; 2024 CHESS CITADEL. ALL RIGHTS RESERVED. For educational purposes only.</p>
+        <h6>This site is for educational purposes only and is not affiliated with or endorsed by Chess.com. All trademarks and assets related to Chess.com are the property of Chess.com LLC.</p>
+    </footer>
+
     <script
         nonce="chesscom-diagram">window.addEventListener("message", e => { e['data'] && "12390955" === e['data']['id'] && document.getElementById(`${e['data']['id']}`) && (document.getElementById(`${e['data']['id']}`).style.height = `${e['data']['frameHeight'] + 37}px`) });</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -126,15 +197,71 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script>
-        var newsInfos = [
-            ["news1", "16", "Carlsen Crosses 2900 But Arjun, Praggnanandhaa Hit Back", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-4"], 
+        const chessOpenings = [
+            "Ruy-Lopez Opening",
+            "Sicilian Defense",
+            "Queen's Gambit",
+            "French Defense",
+            "Caro-Kann Defense",
+            "King's Indian Defense",
+            "English Opening",
+            "Nimzo-Indian Defense",
+            "Italian Game",
+            "Grünfeld Defense"
+        ];
+
+        const chessOpeningPGNs = [
+            "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+            "1. e4 c5",
+            "1. d4 d5 2. c4",
+            "1. e4 e6",
+            "1. e4 c6",
+            "1. d4 Nf6 2. c4 g6",
+            "1. c4",
+            "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4",
+            "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+            "1. d4 Nf6 2. c4 g6 3. Nc3 d5"
+        ];
+
+        const chessOpeningDescriptions = [
+            "The Ruy-Lopez, also known as the Spanish Opening, is one of the oldest and most respected chess openings. By attacking the knight on c6 with 3.Bb5, White applies pressure on Black's center, aiming for long-term positional advantages. This opening often leads to rich, strategic battles with opportunities for both sides to innovate. It is favored by world champions and has stood the test of time due to its depth and flexibility.",
+            "The Sicilian Defense is the most popular and aggressive response to 1.e4. By immediately challenging White’s central dominance with 1...c5, Black seeks to create an asymmetrical pawn structure that offers dynamic counterplay. The Sicilian has numerous variations, such as the Najdorf and Dragon, each with unique tactical and strategic themes. This opening is a favorite among attacking players and has been featured in countless legendary games.",
+            "The Queen's Gambit is a classical opening where White sacrifices a pawn on c4 to gain central control and rapid development. If Black accepts the gambit, White gains active play and opportunities to dominate the center. If Black declines, the game often transitions into slow, strategic play. This opening has been a staple in chess history, played by legends like Bobby Fischer and Garry Kasparov.",
+            "The French Defense is a solid and resilient opening where Black supports the pawn on d5 with 1...e6, preparing to counter White’s central expansion. It often leads to positions where Black must endure a slight spatial disadvantage in exchange for counter-attacking opportunities and a robust pawn structure. Popular with players who enjoy complex, strategic battles, the French is a hallmark of positional play.",
+            "The Caro-Kann Defense is a highly reliable and flexible defense against 1.e4, offering Black a solid pawn structure and few weaknesses. By playing 1...c6, Black prepares to challenge White's pawn on e4 with d5 while maintaining a strong central presence. The Caro-Kann is known for its durability and is a favorite among players who prefer long, strategic battles and endgame mastery.",
+            "The King's Indian Defense is a hypermodern opening where Black allows White to establish a strong pawn center with the plan of counterattacking later. By fianchettoing the bishop on g7 and preparing moves like ...e5 or ...c5, Black seeks to undermine White's position dynamically. This opening is ideal for players who enjoy sharp, tactical battles and dramatic king-side attacks.",
+            "The English Opening is a flexible system where White starts with 1.c4, aiming to control the d5 square and influence the center indirectly. The English often transposes into other openings, such as the Catalan or Sicilian, depending on Black's response. It is a favorite of positional players who appreciate maneuvering and subtle planning over direct confrontation.",
+            "The Nimzo-Indian Defense is a highly sophisticated response to 1.d4, characterized by 1...Nf6 2.c4 e6 3.Nc3 Bb4. By pinning the knight on c3, Black applies immediate pressure on White’s center and aims for rapid development. This opening balances positional and tactical elements, offering Black opportunities to play for dynamic imbalances and structural advantages.",
+            "The Italian Game is one of the oldest recorded openings in chess, focusing on quick development and control of the center. With 3.Bc4, White places the bishop on an active square targeting Black’s f7 pawn, creating immediate attacking chances. The Italian often leads to open positions that favor players with sharp tactical skills and a love for creativity.",
+            "The Grünfeld Defense is a hypermodern response to 1.d4, where Black challenges White's central pawns early with ...d5. By allowing White to build a strong pawn center, Black aims to attack it from a distance using active piece play. This opening is favored by players who thrive in dynamic positions and enjoy counter-attacking against overextended structures."
+        ];
+
+        const chessOpeningLinks = [
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/w5oq0uxLOIU?si=Odqbe6IQkosUyDdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/M9nqKf-0I8c?si=Pl0o3rlcSt9KKHLJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/M9nqKf-0I8c?si=Pl0o3rlcSt9KKHLJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/6IjmZ7DL20o?si=vUPTz_NfhvvslUEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/sx5A66_EWrM?si=ie0gGuCdFN8yyfH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/dI_SPigfWkk?si=8Ku1rDT89RCCx5Vp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/cIAY62zlrGQ?si=kWLbIjwdUiVuNbQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/ljtOTHuFJxg?si=fnJhGaHoXwogWjtO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/XmkgGCmRcOA?si=pBzwuSiPbjKGdKwf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+            `<iframe width="560" height="315" src="https://www.youtube.com/embed/7Xld-cwg9Xg?si=RCluMIANkNio6ips" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+        ];
+
+        const newsInfos = [
+            ["news1", "16", "Carlsen Crosses 2900 But Arjun, Praggnanandhaa Hit Back", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-4"],
             ["news2", "16", "Nakamura Secures Historic Bullet Brawl And Titled Tuesday Trifecta", "https://www.chess.com/news/view/hikaru-nakamura-wins-bullet-brawl-november-16-2024"],
             ["news3", "15", "Giri Scores 1st-Ever Victory For 'Stars,' Drops Only Loss To Alice Lee", "https://www.chess.com/news/view/2024-kids-vs-stars-giri-vs-4-super-talents"],
             ["news4", "15", "Carlsen, Goryachkina Win Tata Steel India Rapid With Round To Spare", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-3"],
             ["news5", "14", "Carlsen Beats So, Arjun To Snatch Sole Lead", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-2"],
             ["news6", "13", "Abdusattorov Leads Carlsen, So, Narayanan As Tata Steel Chess India Begins", "https://www.chess.com/news/view/2024-tata-steel-chess-india-day-1"]
         ];
+
         var newsContent = document.getElementById("news-content");
+        var openingsNav = document.getElementById("openings-nav");
+        var openingList = document.getElementById("opening-list");
+
 
         newsInfos.forEach((newsInfo) => {
             newsContent.innerHTML += `
@@ -155,6 +282,50 @@
                     </div>
                 </div>`;
         });
+
+        for (var i = 0; i < 10; i++){
+            openingsNav.innerHTML +=
+                `<div class="openings-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-0">
+                <a href="#${chessOpenings[i]}"><button class="btn btn-outline-light btn-opening rounded-pill">${chessOpenings[i]}</button></a>
+            </div>`;
+
+            if(i < 9){
+                openingList.innerHTML +=
+                `<div class="opening-listitem" id="${chessOpenings[i]}">
+                    <h1 class="opening-name">0${i+1} ${chessOpenings[i]}</h1>
+                    <h4 class="pgn">(${chessOpeningPGNs[i]})</h4>
+                    <p class="opening-descrip">${chessOpeningDescriptions[i]}</p>
+
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="vid-holder col-12">
+                                <div class="ratio ratio-16x9">
+                                    ${chessOpeningLinks[i]}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }else{
+                openingList.innerHTML +=
+                `<div class="opening-listitem id="${chessOpenings[i]}">
+                    <h1 class="opening-name">${i+1} ${chessOpenings[i]}</h1>
+                    <h4 class="pgn">(${chessOpeningPGNs[i]})</h4>
+                    <p class="opening-descrip">${chessOpeningDescriptions[i]}</p>
+
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="vid-holder col-12">
+                                <div class="ratio ratio-16x9">
+                                    ${chessOpeningLinks[i]}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }
+        }
+
         document.addEventListener("scroll", () => {
             const navbar = document.querySelector(".navbar");
             if (window.scrollY > 100) {

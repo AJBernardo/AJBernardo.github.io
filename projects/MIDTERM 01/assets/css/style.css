@@ -38,6 +38,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+
 .responsive-iframe {
     width: 100%;
     height: 100%;
@@ -106,23 +107,198 @@ p{
     color: #5F3E37;
 }
 
-.history{
-    background: url(../img/watermark.png) no-repeat bottom center;
-    background-color: #5F3E37;
-    color: #DBAF96;
+.btn-opening{
+    height: 70px;
+    width: 180px;
 }
 
+.history{
+    background-color: #5F3E37;
+    color: #DBAF96;
+    margin-top: 200px;
+}
+
+.descrip, .tutorial, .openings-nav, .opening-listitem{
+    margin-top: 150px;
+}
+
+.about-opening, .tutorial, .openings-nav, .opening-list{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.tutorial .row{
+    margin-top: 20px;
+}
+
+.opening-header, .opening-header-puzzle{
+    font-size: 100px;
+}
+
+.opening-header-puzzle{
+    margin-bottom: 100px;
+    color: #5F3E37;
+}
+
+.openings{
+    padding: 40px;
+}
+
+.openings-item{
+    margin-bottom: 70px;
+}
+
+.bordered{
+    border-top: 2px solid #DBAF96;
+}
+
+.opening-name{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.pgn{
+    font-size: 30px;
+}
+
+.opening-descrip{
+    font-size: 22px;
+}
+
+.pgn, .opening-descrip{
+    margin-bottom: 50px;
+}
+
+.daily-puzzle{
+    padding-top: 150px;
+    background-image: url(../img/watermark.png);
+    background-size: cover;
+}
+
+footer{
+	padding-top: 15px;
+    padding-bottom: 15px;
+	color: white;
+	text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: #5F3E37;
+}
 
 
 @media (max-width: 1200px) {
     .title {
         top: clamp(18%, 35vh, 40%);
     }
+
+    .opening-header, .opening-header-puzzle{
+        font-size: 80px;
+    }
+
+    .openings{
+        padding: 35px;
+    }
+
+    .opening-name{
+        font-size: 65px;
+    }
+    
+    .pgn{
+        font-size: 28px;
+    }
+    
+    .opening-descrip{
+        font-size: 20px;
+    }
+
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .descrip, .tutorial, .openings-nav, .opening-listitem{
+        margin-top: 120px;
+    }
+
+    .pgn, .opening-descrip{
+        margin-bottom: 40px;
+    }
+
+    .openings-item{
+        margin-bottom: 55px;
+    }
+
+    .opening-header-puzzle{
+        margin-bottom: 80px;
+    }
+
+    .daily-puzzle{
+        padding-top: 120px;
+    }
+
+    .history{
+        margin-top: 150px;
+    }
+
 }
 
 @media (max-width: 992px) {
     .title {
         top: clamp(15%, 30vh, 35%);
+    }
+
+    .opening-header, .opening-header-puzzle{
+        font-size: 60px;
+    }
+
+    .openings{
+        padding: 30px;
+    }
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .opening-name{
+        font-size: 50px;
+    }
+    
+    .pgn{
+        font-size: 24px;
+    }
+    
+    .opening-descrip{
+        font-size: 18px;
+    }
+
+    .descrip, .tutorial, .openings-nav, .opening-listitem{
+        margin-top: 90px;
+    }
+
+    .pgn, .opening-descrip{
+        margin-bottom: 30px;
+    }
+
+    .openings-item{
+        margin-bottom: 40px;
+    }
+
+    .opening-header-puzzle{
+        margin-bottom: 60px;
+    }
+
+    .daily-puzzle{
+        padding-top: 90px;
+    }
+
+    .history{
+        margin-top: 100px;
+    }
+
+    .news-container{
+        margin-top: 40px;
     }
 }
 
@@ -130,23 +306,144 @@ p{
     .title {
         top: clamp(13%, 25vh, 30%);
     }
+
+    .opening-header, .opening-header-puzzle{
+        font-size: 40px;
+    }
+
+    .openings{
+        padding: 25px;
+    }
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .opening-name{
+        font-size: 35px;
+    }
+    
+    .pgn{
+        font-size: 18px;
+    }
+    
+    .opening-descrip{
+        font-size: 14px;
+    }
+
+    .descrip, .tutorial, .openings-nav, .opening-listitem{
+        margin-top: 60px;
+    }
+
+    .pgn, .opening-descrip{
+        margin-bottom: 20px;
+    }
+
+    .openings-item{
+        margin-bottom: 25px;
+    }
+
+    .opening-header-puzzle{
+        margin-bottom: 40px;
+    }
+
+    .daily-puzzle{
+        padding-top: 60px;
+    }
+
+    .history{
+        margin-top: 50px;
+    }
+
+    .news-container{
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 576px) {
     .title {
         top: clamp(10%, 20vh, 25%);
     }
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .opening-header, .opening-header-puzzle{
+        font-size: 20px;
+    }
+
+    .openings{
+        padding: 20px;
+    }
+
+    .opening-name{
+        font-size: 20px;
+    }
+    
+    .pgn{
+        font-size: 12px;
+    }
+    
+    .opening-descrip{
+        font-size: 10px;
+    }
+
+    .descrip, .tutorial, .openings-nav, .opening-listitem{
+        margin-top: 30px;
+    }
+
+    .pgn, .opening-descrip{
+        margin-bottom: 10px;
+    }
+
+    .openings-item{
+        margin-bottom: 10px;
+    }
+
+    .opening-header-puzzle{
+        margin-bottom: 20px;
+    }
+
+    .daily-puzzle{
+        padding-top: 30px;
+    }
+
+    .history{
+        margin-top: 25px;
+    }
+
+    .news-container{
+        margin-top: 20px;
+    }
+
 }
 
 @media (max-width: 480px) {
     .title {
         top: clamp(10%, 18vh, 22%);
     }
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
 
 @media (max-width: 360px) {
     .title {
         top: clamp(5%, 15vh, 20%);
     }
+
+    .about-opening, .tutorial, .openings-nav, .opening-list{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
+
 
