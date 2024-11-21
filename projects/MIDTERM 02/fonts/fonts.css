@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Assassin$';
+    src: url('Assassin$.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand_Book';
+    src: url('Quicksand_Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

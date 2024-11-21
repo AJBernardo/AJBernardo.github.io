@@ -1,0 +1,222 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--title: "Assassin$";
+}
+
+.main{
+	height: 2000px;
+}
+
+.title{
+	background-color: white;
+	background-position: cover;
+	background-repeat: no-repeat;
+	padding-top: 350px;
+	font-family: var(--title);
+	color: #70090C;
+	text-align: center;
+	height: 1000px;
+}
+
+.ac{
+	font-size: 120px;
+}
+
+.greetings{
+	font-size: 40px;
+}
+
+.quote{
+	font-size: 35px;
+	padding-top: 100px;
+}
+
+.content{
+	background-color: black;
+}
+
+.descrip{
+	padding-top: 100px;
+	font-family: "Quicksand_Book";
+	text-align: center;
+	color: white;
+	font-size: 24px;
+}
+
+.new-release, .all-release{
+	font-family: "Quicksand_Book";
+	margin-top: 200px;
+	color: white;
+}
+
+.badge{
+	font-family: "Quicksand_Book";
+}
+
+.game-descrip{
+	margin-top: 40px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+.container{
+	margin-bottom: 200px;
+}
+
+footer{
+	padding-top: 15px;
+	font-family: var(--title);
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 1600px){
+	.game-info{
+		text-align: end;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container{
+		margin-bottom: 160px;
+	}
+
+	.game-info{
+		text-align: end;
+	}
+
+	.game-descrip{
+		font-size: 18px;
+	}
+
+	.ac{
+		font-size: 100px;
+	}
+
+	.greetings{
+		font-size: 35px;
+	}
+	
+	.quote{
+		font-size: 29px;
+	}
+
+	.descrip{
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container{
+		margin-bottom: 120px;
+	}
+
+	.new-release, .all-release{
+		margin-top: 160px;
+	}
+
+	.game-info{
+		text-align: end;
+	}
+
+	.game-descrip{
+		font-size: 16px;
+	}
+	
+	.ac{
+		font-size: 80px;
+	}
+
+	.greetings{
+		font-size: 30px;
+	}
+	
+	.quote{
+		font-size: 24px;
+	}
+
+	.descrip{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container{
+		margin-bottom: 80px;
+	}
+
+	.new-release, .all-release{
+		margin-top: 120px;
+	}
+
+	.game-info, .game-info-v2 {
+		text-align: center;
+	}
+
+	.game-descrip{
+		font-size: 14px;
+	}
+
+	.ac{
+		font-size: 60px;
+	}
+
+	.greetings{
+		font-size: 25px;
+	}
+	
+	.quote{
+		font-size: 19px;
+	}
+
+	.descrip{
+		font-size: 15px;
+	}
+
+	button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.container{
+		margin-bottom: 40px;
+	}
+
+	.new-release, .all-release{
+		margin-top: 80px;
+	}
+
+	.game-info, .game-info-v2 {
+		text-align: center;
+	}
+
+	.game-descrip{
+		font-size: 12px;
+	}
+
+	.ac{
+		font-size: 40px;
+	}
+
+	.greetings{
+		font-size: 20px;
+	}
+	
+	.quote{
+		font-size: 14px;
+	}
+
+	.descrip{
+		font-size: 12px;
+	}
+}

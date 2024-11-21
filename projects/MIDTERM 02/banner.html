@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="parallax.css" />
+	<link href="https://fonts.cdnfonts.com/css/heroes-assemble" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="fonts/fonts.css" rel="stylesheet">
+	<link href="img/icon.png" rel="icon" type="image/x-icon">
+	<title>Assassin's Creed</title>
+</head>
+
+<body>
+	<section>
+		<div class="keyart" id="parallax">
+			<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+			<div class="keyart_layer parallax" id="keyart-1" data-speed="30"></div>
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="30"></div>
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="-5"></div>
+			<div class="keyart_layer parallax" id="keyart-4" data-speed="-5"></div>
+			<div class="keyart_layer parallax" id="keyart-5" data-speed="-19"></div>
+			<!--Front image, in sync with scroll, no need to parallax-->
+			<!--Add or Remove layers as needed - check Parallax.css for refrence-->
+		</div>
+	</section>
+
+	<section class="main-content">
+		<div class="main container-fluid p-0">
+			<div class="title container-fluid">
+				<div class="row">
+					<h1 class="greetings">WELCOME TO THE UNIVERSE OF</h1>
+					<h1 class="ac">ASSASSIN'S CREED</h1>
+					<h1 class="quote">? Nothing is true; everything is
+						permitted. ?</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="content container-fluid pb-3">
+			<div class="row pt-5">
+				<img src="img/cover.png" alt="Assassin's Creed" class="img-fluid">
+			</div>
+
+			<div class="descrip row w-75 mx-auto">
+				<p>The Assassin's Creed franchise is a globally renowned series of video games, novels, comics, and
+					multimedia adaptations created by Ubisoft. It debuted in 2007 with a game set during the Third
+					Crusade and has since evolved into a sprawling franchise known for its unique blend of historical
+					exploration and science fiction.</p>
+				<div>
+					<button class="btn btn-outline-light rounded-pill mx-auto">Visit Ubisoft</button>
+				</div>
+			</div>
+
+			<div class="new-release container">
+				<div class="row">
+					<h1 class="display-3" style="font-family: var(--title);">? UPCOMING RELEASES</h1>
+				</div>
+
+				<div class="container">
+					<div class="row mt-5">
+						<div class="col-12 col-md-3">
+							<img src="img/shadows.jpg" alt="Assassin's Creed Shadows To Be Released"
+								class="img-fluid rounded">
+						</div>
+
+						<div class="game-info col-12 col-md-9">
+							<h1 class="display-4" style="font-family: var(--title);">ASSASSIN'S CREED SHADOWS<span
+									class="badge text-bg-info fs-6">2025</span></h1>
+							<h6>Will be Release on February 14, 2025</h6>
+							<p class="game-descrip">Assassin's Creed Shadows is an upcoming entry in the Assassin's
+								Creed series, set for
+								release in early 2025. The game takes place during Feudal Japan's Azuchi-Momoyama era,
+								featuring two protagonists: Yasuke, the first Black samurai, and Naoe, a skilled
+								shinobi. Yasuke’s combat is heavy and brutal, while Naoe focuses on stealth and agility.
+								Players can switch between them to suit their preferred playstyle. The game promises a
+								detailed open world, with historical accuracy and dynamic combat.​</p>
+							<a
+								href="https://store.ubisoft.com/sea/assassin-s-creed-shadows/660e5a03fbff4e2940488bcd.html?lang=en_PH"><button
+									class="btn btn-outline-light rounded-pill">Add To Wishlist</button></a>
+							<button class="btn btn-outline-light rounded-pill" onclick="openVideo(14)"
+								id="btn-see14">See Official Trailer</button>
+						</div>
+					</div>
+
+					<div class="trailer row d-none" id="trailer14">
+						<div class="container-fluid" style="margin-top: 150px;">
+							<div class="ratio ratio-16x9">
+								<iframe src="https://www.youtube.com/embed/vovkzbtYBC8?si=QmzRANFLVmafG3iU"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="all-release container" id="all-release-games">
+				<div class="row">
+					<h1 class="display-3 text-end" style="font-family: var(--title);">ALL ASSASSIN'S CREED GAMES ?</h1>
+				</div>
+
+				<!-- ALL INFORMATION ABOUT THE GAMES WILL BE INJECTED HERE VIA JAVASCRIPT -->
+			</div>
+
+			<footer class="border-top">
+				<p id="footer">&copy; 2024 ASSASSIN'S CREED. ALL RIGHTS RESERVED.</p>
+				<p style="font-family: 'Quicksand_Book'; font-size: 14px;">This site is for educational purposes only and is not affiliated with or endorsed by Ubisoft. All Assassin's Creed assets and trademarks belong to Ubisoft Entertainment.</p>
+			</footer>
+
+		</div>
+	</section>
+
+	<!--Uses JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+
+	<script>
+		var allReleaseGames = document.getElementById("all-release-games");
+		var trailer = document.getElementById("trailer");
+		var btnSee = document.getElementById("btn-see");
+
+		const titles = [
+			"ASSASSIN'S CREED",
+			"ASSASSIN'S CREED II",
+			"ASSASSIN'S CREED: BROTHERHOOD",
+			"ASSASSIN'S CREED: REVELATIONS",
+			"ASSASSIN'S CREED III",
+			"ASSASSIN'S CREED IV: BLACK FLAG",
+			"ASSASSIN'S CREED: ROGUE",
+			"ASSASSIN'S CREED: UNITY",
+			"ASSASSIN'S CREED: SYNDICATE",
+			"ASSASSIN'S CREED: ORIGINS",
+			"ASSASSIN'S CREED: ODYSSEY",
+			"ASSASSIN'S CREED: VALHALLA",
+			"ASSASSIN'S CREED: MIRAGE",
+		];
+
+		const posters = ['ac', 'ac2', 'brotherhood', 'revelations', 'ac3', 'blackflag', 'rogue', 'unity', 'syndicate', 'origins', 'odyssey', 'valhalla', 'mirage']
+
+
+		const descriptions = [
+			"In the midst of the Third Crusade, the conflict between the Assassins and the Templars reaches a deadly standstill. As Altaïr Ibn-La'Ahad, a skilled but arrogant Assassin, you are tasked with eliminating key Templar leaders. But as you uncover deeper conspiracies, the lines between right and wrong blur. Hidden truths and a mysterious artifact called the Apple of Eden will change the fate of humanity, and your journey will force you to question the very foundations of your beliefs.",
+			"Revenge. A young nobleman, Ezio Auditore da Firenze, watches his family slaughtered by powerful enemies. Driven by a thirst for vengeance, Ezio plunges into the world of assassins, uncovering a complex web of corruption that spans centuries. As you learn the ways of the Assassin, you’ll face some of Italy’s most iconic figures, including the infamous Borgia family. The Renaissance is a time of art, innovation, and intrigue—perfect for an Assassin’s blade.",
+			"The Assassin’s war against the Templars intensifies in Renaissance Italy, and Ezio Auditore is determined to liberate Rome from the grip of the corrupt Borgia family. With the help of a growing Assassin Brotherhood, he takes the fight to the heart of the Templar order. But with every ally, there is a betrayal, and with every victory, there is a new challenge. It’s not just about survival—it’s about leading the revolution.",
+			"Ezio Auditore’s journey takes him to Constantinople, a city steeped in history and danger. As an aging Assassin, Ezio seeks the final secrets of his predecessor, Altair Ibn-La'Ahad, in a race against the Templars. Amid political intrigue and a shifting power struggle, Ezio must use everything he has learned to uncover the truth, but the cost of knowledge may be higher than he ever imagined.",
+			"In the turmoil of the American Revolution, a new Assassin emerges—Connor Kenway, a half-English, half-Native American warrior. Torn between his heritage and the fight for freedom, Connor is drawn into the war as the Templars seek to manipulate the outcome for their own gain. As the Revolution rages on, Connor’s journey will test his loyalty, and shape the destiny of a new nation.",
+			"The Caribbean is a lawless paradise—perfect for piracy. Edward Kenway, a charismatic rogue and former Assassin, gets caught in the conflict between Assassins and Templars as he sails the seas. Driven by the promise of treasure and power, Edward’s quest takes him from the high seas to the deepest political intrigue, where the freedom of the pirate’s life clashes with the deadly ambitions of both sides.",
+			"The Templars have long been the enemy, but Shay Patrick Cormac, a young Assassin, learns that not all is as it seems. After a betrayal that leaves him scarred, Shay joins the Templars, renouncing his former Brotherhood to hunt down his former comrades. As the new war between the Assassins and Templars escalates, Shay’s journey forces him to confront what it means to be a hero—or a villain—in a world at war.",
+			"The streets of Paris are ablaze with revolution, and Arno Dorian, a young man who has lost everything, must navigate a city divided. As an Assassin, Arno is drawn into the fight for liberty, equality, and fraternity. But amidst the chaos of the French Revolution, he will find that justice is not always black and white. Betrayal, love, and vengeance will shape his destiny as he seeks to uncover the truth and restore his honor.",
+			"London, 1868—the heart of the British Empire is a city of wealth, power, and corruption. Jacob and Evie Frye, twin siblings, arrive in the city to lead the Assassins’ charge against the Templars. Jacob’s boldness and Evie’s cunning will shape the future of London, as they fight to liberate the city from the control of the Templars, and build an empire of their own. The streets are theirs for the taking.",
+			"Ancient Egypt—at the crossroads of history, where gods walk among mortals. Bayek, a Medjay warrior, embarks on a journey to avenge his son’s murder, only to uncover the origins of the Assassin Brotherhood. In the shadow of mighty pharaohs, secrets and conspiracies threaten the balance of the land. Bayek’s struggle will shape not only Egypt’s future but also the very idea of what it means to be an Assassin.",
+			"In the midst of the Peloponnesian War, Greece is a land of myth, chaos, and untold riches. As Alexios or Kassandra, a mercenary with ties to the Spartan royal bloodline, you must carve your path in a world full of gods, heroes, and monsters. Your choices will determine the fate of nations and the gods themselves, as you uncover secrets that have been buried for millennia. Freedom and destiny await you.",
+			"Vikings have come to England. As Eivor, a warrior of the Norse lands, you are thrust into the brutal conquest of a new kingdom. But beyond the battles lies a deeper war—the Assassins and Templars are at odds once again. You must build a new life for your people, conquer new lands, and unearth the secrets of the ancient world, all while embracing your Viking heritage and seeking your place in the annals of history.",
+			"In the heart of Baghdad, during the Islamic Golden Age, Basim Ibn Ishaq’s quest for vengeance will lead him down a path that will change the course of history. In this return to stealth-based gameplay, Basim uncovers dark secrets and fights to avenge the death of his mentor. Mirage offers a deep dive into the origins of the Assassins, as Basim struggles to understand the true meaning of justice.",
+		];
+
+		const releaseDates = [
+			"November 13, 2007",
+			"November 17, 2009",
+			"November 16, 2010",
+			"November 15, 2011",
+			"October 30, 2012",
+			"October 29, 2013",
+			"November 11, 2014",
+			"November 11, 2014",
+			"October 23, 2015",
+			"October 27, 2017",
+			"October 5, 2018",
+			"November 10, 2020",
+			"October 5, 2023",
+		];
+
+		const storeLinks = [
+			"https://store.ubisoft.com/sea/assassin-s-creed/56c4947f88a7e300458b468e.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-ii/56c4947f88a7e300458b4690.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-brotherhood/56c4948088a7e300458b46b6.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-revelations/56c4948188a7e300458b46d2.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-iii-remastered/5c62f61dadc72438053897eb.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-iv-black-flag-gold-edition/575ffdb4a3be1633568b4e90.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-rogue/56c4947988a7e300458b45bc.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-unity/56c4947a88a7e300458b45d6.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-syndicate/56c4947988a7e300458b45c6.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-origins/592450934e0165f46c8b4568.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-odyssey/5afda5f788a7e34d25b5012f.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-valhalla/5e849c6c5cdf9a21c0b4e731.html?lang=en_PH",
+			"https://store.ubisoft.com/sea/assassin-s-creed-mirage/62ea4f8e09372571f2736a71.html?lang=en_PH"
+		]
+
+		const trailers = [
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/RjQ6ZtyXoA0?si=xI3T_dvQ963JMBcr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/_xkCPNECud8?si=tD42N5kRPb5TugTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/zzNs4-kRLaE?si=xmPLzqWE2cMWqPxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/753327AMNIM?si=p_4MSOiTy0cLVVK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/-pUhraVG7Ow?si=wgLRHHuHAAEJgpFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/OwVe4ZNeQZk?si=pFwrpuVMRTj3pcGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/bjSy5kF6io0?si=jCSGpr62IpI50xqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/xzCEdSKMkdU?si=m1tl_yAJN_zT4ayv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/WTBbwgsyxvg?si=EAxXvppkkOe9ipqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/kGq7ZCth7QY?si=orwimO3boqmuTOvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/s_SJZSAtLBA?si=9NKixV1MAw2rQxF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/rKjUAWlbTJk?si=y4vAHv7Jh8ZcXhPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+			`<iframe width="560" height="315" src="https://www.youtube.com/embed/x55lAlFtXmw?si=xkW3H9OSq0HqYBYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+		]
+
+		for (var i = 0; i < 13; i++) {
+			if (i % 2 == 0) {
+				allReleaseGames.innerHTML +=
+					`<div class="container">
+						<div class="row mt-5">
+							<div class="col-12 col-md-3 order-sm-1 order-md-2 mb-3">
+								<img src="img/${posters[i]}.png" alt="${titles[i]}"
+									class="img-fluid rounded">
+							</div>
+
+							<div class="game-info col-12 col-md-9 order-sm-2 order-md-1 mb-3">
+								<h1 class="display-4" style="font-family: var(--title);">${titles[i]}</h1>
+								<h6>Released on ${releaseDates[i]}</h6>
+								<p class="game-descrip">${descriptions[i]}​</p>
+								<a href="${storeLinks[i]}"><button
+										class="btn btn-outline-light rounded-pill">Buy Now</button></a>
+								<button class="btn btn-outline-light rounded-pill" onclick="openVideo(${i})" id="btn-see${i}">See Official Trailer</button>
+
+							</div>
+						</div>
+
+						<div class="trailer row d-none" id="trailer${i}">
+							<div class="container-fluid" style="margin-top: 150px;">
+								<div class="ratio ratio-16x9">
+									${trailers[i]}
+								</div>
+							</div>
+						</div>
+					</div>`
+			} else {
+				allReleaseGames.innerHTML +=
+					`<div class="container">
+						<div class="row mt-5">
+							<div class="col-12 col-md-3 mb-3">
+								<img src="img/${posters[i]}.png" alt="${titles[i]}"
+									class="img-fluid rounded">
+							</div>
+
+							<div class="game-info-v2 col-12 col-md-9 mb-3">
+								<h1 class="display-4" style="font-family: var(--title);">${titles[i]}</h1>
+								<h6>Released on ${releaseDates[i]}</h6>
+								<p class="game-descrip">${descriptions[i]}​</p>
+								<a href="${storeLinks[i]}"><button
+										class="btn btn-outline-light rounded-pill">Buy Now</button></a>
+								<button class="btn btn-outline-light rounded-pill" onclick="openVideo(${i})" id="btn-see${i}">See Official Trailer</button>
+
+							</div>
+						</div>
+
+						<div class="trailer row d-none" id="trailer${i}">
+							<div class="container-fluid" style="margin-top: 150px;">
+								<div class="ratio ratio-16x9">
+									${trailers[i]}
+								</div>
+							</div>
+						</div>
+				</div>`
+			}
+		}
+
+
+
+
+		function openVideo(id) {
+			// Select the trailer based on the passed id
+			var trailer = document.getElementById(`trailer${id}`);
+			trailer.classList.toggle("d-none");
+
+			// If the trailer is visible, change the button text to 'Hide Trailer'
+			var btnSee = document.getElementById(`btn-see${id}`);
+			if (trailer.classList.contains("d-none")) {
+				btnSee.textContent = "See Official Trailer";
+			} else {
+				btnSee.textContent = "Hide Trailer";
+			}
+		}
+
+
+	</script>
+
+
+</body>
+
+</html>
