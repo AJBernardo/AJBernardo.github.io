@@ -18,9 +18,10 @@
         }
 
         .character-card {
-            width: 918px;
-            min-height: 586px;
+            width: auto;
             border-radius: 20px;
+            background-size: cover;
+            background-position: top;
         }
 
         .profile {
@@ -40,7 +41,12 @@
             font-size: 30px;
         }
 
-        
+        @media(max-width: 680px) {
+            .character-card{
+                margin:20px;
+                padding-bottom: 60px;
+            }
+        }
     </style>
 </head>
 
@@ -83,7 +89,7 @@
         crossorigin="anonymous"></script>
     <script>
         var characterCard = document.getElementById('character-card');
-        
+
 
         const displayCharacterInfo = async (searchTerm) => {
             const response = await fetch(`https://api.potterdb.com/v1/characters/${searchTerm}`);
@@ -94,10 +100,10 @@
             const characterBirthday = character.data.attributes.born || "Undefined";
             const characterMaritalStatus = character.data.attributes.marital_status || "Single";
             const characterFamilyMember = character.data.attributes.family_members.length > 0 ? character.data.attributes.family_members[0] : "Unavailable";
-            
-            characterCard.innerHTML += 
-            `<div class="row">
-                <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+
+            characterCard.innerHTML +=
+                `<div class="row">
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                     <img src="` + character.data.attributes.image + `" class="profile img-fluid bg-black" id="profile">
                     <h5 class="title mt-2" id="title">` + characterTitle + `</h5>
                 </div>
@@ -133,10 +139,6 @@
                         <h6>In case of emergency, please contact this person:</h6>
                         <h3 class="display-6" id="family-member">` + characterFamilyMember + `</h3>
                     </div>
-
-                    <div class="row mt-4">
-                        <h6 class="wiki">` + character.data.attributes.wiki + `</h6>
-                    </div>
                 </div>
             </div>`
 
@@ -146,14 +148,14 @@
 
             var characterInfo = document.getElementById('character-info');
             var title = document.getElementById('title');
-            
-            if(house === 'Hufflepuff'){
+
+            if (house === 'Hufflepuff') {
                 characterInfo.style.color = "black";
                 title.style.color = "black"
             }
 
             console.log(house)
-                
+
 
         }
 
