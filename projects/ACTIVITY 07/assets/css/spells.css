@@ -9,7 +9,7 @@ body{
     border-radius: 20px;
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: transparent
+    color: transparent;
 }
 
 .spell-card:hover{
