@@ -24,6 +24,12 @@ body {
     color: white;
 }
 
+.logo{
+    display: none;
+    width: 55px;
+    height: 55px;
+}
+
 .title {
     position: absolute;
     top: clamp(15%, 40.29vh, 40%);
@@ -432,7 +438,22 @@ footer{
         padding-right: 15px;
     }
 
+    .logo{
+        display: block;
+    }
+
+    .brand{
+        display: none;
+    }
+
 }
+
+/* @media (max-width: 395px) {
+    .brand{
+        max-width: 270px;
+        height: auto;
+    }
+} */
 
 @media (max-width: 360px) {
     .title {
@@ -445,5 +466,7 @@ footer{
     }
 
 }
+
+
 
 
