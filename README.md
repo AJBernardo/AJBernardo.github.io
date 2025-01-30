@@ -34,14 +34,4 @@
 - [ ] Otaku Library
 - [ ] Game Development Using Javascript
 
-
-<!--- This is a comment --->
-> Crafting Digital Experiences That Matter
-
 Visit [My Portfolio](https://ajbernardo.github.io/)
-
-<!-- ```javascript
-//Assigning values to variable
-const name = "Austine Jade Bernardo";
-console.log(name);
-``` -->
