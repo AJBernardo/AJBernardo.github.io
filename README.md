@@ -5,3 +5,8 @@
 <!--- This is a comment --->
 > Crafting Digital Experiences That Matter
 
+```javascript
+//Assigning values to variable
+const name = "Austine Jade Bernardo";
+console.log(name);
+```
