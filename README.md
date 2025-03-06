@@ -1,5 +1,5 @@
 # :star: WELCOME TO MY PORTFOLIO! :star:
-![THY AUSTINE](img/brand.png)
+![THY AUSTINE](assets/img/brand.png)
 
 **Magandang Araw!** I am _Austine Jade Bernardo_, a junior student at the esteemed Polytechnic University of the Philippines - Sto. Tomas Campus <sup> BSIT </sup>.
 
