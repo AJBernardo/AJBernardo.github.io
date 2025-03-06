@@ -1,7 +1,0 @@
-:root{
-    --navbarColor: linear-gradient(268deg, #73ADB4 -32.94%, #FFF 186.26%);
-}
-
-.navbar{
-    background-color: var(--navbarColor);
-}
