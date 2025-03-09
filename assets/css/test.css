@@ -1,0 +1,30 @@
+body{
+    background-color: #1E1E1E;
+}
+
+.backdrop{
+    position: absolute;
+    top: 0px;
+    max-height: 695px;
+}
+
+.wordmark{
+    width: 80%;
+    position: relative;
+    top: 300px;
+    z-index: 1;
+    max-width: 1000px;
+
+}
+
+@media(max-width: 710px){
+    .wordmark{
+        top: 250px;
+    }
+}
+
+@media(max-width: 592px){
+    .wordmark{
+        top: 200px;
+    }
+}
