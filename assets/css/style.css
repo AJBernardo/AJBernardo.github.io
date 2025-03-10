@@ -23,13 +23,6 @@ body {
     color: white;
 }
 
-.color-mode {
-    border: none;
-    background-color: transparent;
-    font-weight: 600;
-    color: white;
-}
-
 .cover {
     object-fit: cover;
     max-height: 550px;
@@ -120,39 +113,32 @@ p{
 
 }
 
-.project-button{
+.project-button {
     text-align: center;
     font-family: 'Edit Undo BRK', sans-serif;
-
-    /* margin-right: 20px; */
-    width: 180px;
-    height: 50px;
-    background-color: #CB6C6A;
-    color: #F1C1BD;
-    border: none;
-    border-radius: 5px;
-    /* padding: 15px 20px; */
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    aspect-ratio: 1 / 1;
+    width: 30vw;
+    min-width: 150px;
+    max-width: 400px;
+    border-radius: 50%;
 }
 
-.project-button:hover {
-    background-color: #2F4B4C;
+.left-button{
+    background: url(../img/lbg_button.gif);
+    background-size: cover;
+}
+
+.right-button{
+    background: url(../img/rbg_button.gif);
+    background-size: cover;
+}
+
+.left-button:hover, .right-button:hover {
+    background: #2F4B4C;
     color:#E0DADE
 }
-
-
-
-/* .contact .row{
-    max-height: 100%;
-} */
-
-/* .socmed-card{
-    width: 100px;
-    height: 100px;
-} */
 
 .contact{
     height: 300px;
@@ -186,13 +172,18 @@ i{
 }
 
 @media (max-width: 992px) {
-
+    .project-button{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 768px) {
-
     .frieren{
         display: none;
+    }
+
+    .project-button{
+        font-size: 18px;
     }
 }
 
@@ -202,8 +193,6 @@ i{
     }
 
     .project-button{
-        width: 116px;
-        height: 30px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
