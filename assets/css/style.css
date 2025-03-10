@@ -1,29 +1,4 @@
-body {
-    font-family: 'Edit Undo BRK', sans-serif;
-    background: linear-gradient(90deg, #121C84 -17.5%, #8278DA 102.78%);
-    color: white;
-}
-
-.navbar {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    background: linear-gradient(90deg, #121C84 -17.5%, #8278DA 102.78%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.logo {
-    max-width: 280px;
-    height: auto;
-}
-
-.nav-link {
-    color: white;
-}
-
-.cover {
+.cover, .webdev-image, .appdev-image {
     object-fit: cover;
     max-height: 550px;
     width: 100%;
@@ -42,9 +17,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
     text-align: center;
-    font-family: 'Edit Undo BRK', sans-serif;
-    font-size: clamp(4rem, 10vw, 7.5rem);
-    -webkit-text-stroke-width: clamp(4px, 0.5vw, 7px);
+    font-family: "ByteBounce";
+    font-size: clamp(4rem, 10vw, 10rem);
+    -webkit-text-stroke-width: clamp(2px, 0.5vw, 5px);
     -webkit-text-stroke-color: black;
     margin-top: 0px;
     word-wrap: break-word;
