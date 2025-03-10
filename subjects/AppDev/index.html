@@ -11,6 +11,35 @@
     <link href="../../assets/fonts/fonts.css" rel="stylesheet">
     <link href="../../assets/css/navbar.css" rel="stylesheet">
     <link href="../../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        p {
+            font-family: "ByteBounce";
+            font-size: clamp(0.1rem, 5vw, 2rem);
+        }
+
+        .project-container {
+            margin-block: 10rem;
+        }
+
+        .description {
+            font-size: 24px;
+        }
+
+        .btn-project {
+            font-size: 40px;
+            color: white;
+            background-color: transparent;
+            border: white solid 3px;
+            padding-inline: 20px;
+        }
+
+        .btn-project:hover {
+            background-color: #CB6C6A;
+            color: white;
+            border-color: #F1C1BD;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,11 +67,34 @@
     </div>
 
     <div class="appdev-cover container-fluid p-0">
-        <img src="../../assets/img/appdev.gif" alt="Application Development and Emerging Technologies Projects" class="appdev-image img-fluid">
+        <img src="../../assets/img/appdev.gif" alt="Application Development and Emerging Technologies Projects"
+            class="appdev-image img-fluid">
     </div>
 
     <div class="container">
-        <h1 class="title">APPDEV PROJECTS</h1>
+        <h1 class="title border-bottom">APPDEV PROJECTS</h1>
+        <p class="text-center mx-1 mx-lg-5  mt-3 mt-lg-5">
+            Welcome to my collection of applications development and emerging technology projects! These projects
+            showcase my expertise in building innovative applications while integrating the latest advancements in
+            technology. From AI-powered solutions to modern software development, explore how I leverage cutting-edge
+            tools to create impactful digital experiences.
+        </p>
+    </div>
+
+    <div class="project-container container">
+        <div class="row my-5">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_1.png" class="img-fluid rounded">
+            </div>
+            <div class="col-12 col-md-8">
+                <h1>01 COMING SOON</h1>
+                <p class="description">
+                    An exciting new project is on the way! Stay tuned for updates as we craft something amazing. Check
+                    back soon for more details! 🚀
+                </p>
+                <button class="btn-project disabled">OPEN PROJECT</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
