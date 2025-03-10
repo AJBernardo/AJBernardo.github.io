@@ -23,11 +23,19 @@
         }
 
         .description {
-            font-size: 24px;
+            font-size: clamp(0.1rem, 5vw, 2rem);
+        }
+
+        .project-icons{
+            max-width: 300px;
+            max-height: 300px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
         }
 
         .btn-project {
-            font-size: 40px;
+            /* font-size: 40px; */
+            font-size: clamp(1.5rem, 5vw, 2rem);
             color: white;
             background-color: transparent;
             border: white solid 3px;
@@ -81,98 +89,96 @@
         </p>
     </div>
 
-    <div class="project-container container">
-        <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_1.png" class="img-fluid rounded">
+    <div class="project-container container pb-5">
+        <div class="row my-1 my-lg-5">
+            <div class="col-12 col-lg-4 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_1.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>01 SAMSUNG GALAXY Z FLIP 5</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">01 SAMSUNG GALAXY Z FLIP 5</h1>
                 <p class="description">
                     This project highlights the Samsung Galaxy Z Flip 5 through a modern and visually appealing website.
                     It showcases the phone’s unique foldable design, key features, and specifications in an engaging and
                     informative way. The project focuses on delivering a user-friendly interface to enhance the product
                     presentation.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="A04/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
 
         <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_2.png" class="img-fluid rounded">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_2.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>02 BELLA VENEZIA</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">02 BELLA VENEZIA</h1>
                 <p class="description">
                     This project captures the timeless charm of Venice, Italy, showcasing its iconic landmarks like St.
                     Mark’s Basilica, the Grand Canal, and the Rialto Bridge. Explore hidden alleys, breathtaking
                     architecture, and the city’s enchanting atmosphere through a beautifully designed web experience.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="A05/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
 
         <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_3.png" class="img-fluid rounded">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_3.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>03 IDOL FACTORY</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">03 IDOL FACTORY</h1>
                 <p class="description">
                     This project highlights the talented actors of IdolFactory Thailand, featuring detailed profiles,
                     career highlights, and their most popular dramas. Explore in-depth information on their roles,
-                    upcoming projects, and behind-the-scenes moments from hit series. Designed as an engaging fan hub,
-                    this website offers an immersive experience for those who want to stay updated on their favorite
-                    IdolFactory stars and productions.
+                    upcoming projects, and behind-the-scenes moments from hit series.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="A06/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
 
         <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_4.png" class="img-fluid rounded">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_4.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>04 THE HOGWARTS LEDGER</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">04 THE HOGWARTS LEDGER</h1>
                 <p class="description">
                     This API powers Hogwarts Ledger, providing detailed profiles of Hogwarts characters, including
                     house, wand, patronus, and background. Designed for easy integration, it’s a go-to resource for fans
                     and developers exploring the Wizarding World.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="A07/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
 
         <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_5.png" class="img-fluid rounded">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_5.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>05 CHESS CITADEL</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">05 CHESS CITADEL</h1>
                 <p class="description">
                     This project is a chess resource platform focused on openings, game mechanics, and the latest chess
                     news. Explore detailed analyses of classic and modern openings, stay updated on tournaments, and
                     deepen your understanding of chess strategies through expert insights.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="M01/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
 
         <div class="row my-5">
-            <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="../../assets/img/project_6.png" class="img-fluid rounded">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="../../assets/img/project_6.png" class="project-icons img-fluid rounded">
             </div>
-            <div class="col-12 col-md-8">
-                <h1>06 ASSASSIN'S CREED PARALLAX</h1>
+            <div class="col-12 col-lg-8 my-5 my-lg-0 px-5 px-lg-0">
+                <h1 class="text-center text-lg-start">06 ASSASSIN'S CREED PARALLAX</h1>
                 <p class="description">
                     This project is an interactive parallax website that features the entire Assassin’s Creed game
                     franchise. Explore the evolution of the series with stunning visuals, game summaries, and key
                     highlights from each title. With smooth scrolling effects and immersive design, this project brings
                     the Assassin’s Creed universe to life like never before.
                 </p>
-                <button class="btn-project">OPEN PROJECT</button>
+                <a href="M02/index.html" target="_blank"><button class="btn-project">OPEN PROJECT</button></a>
             </div>
         </div>
     </div>
