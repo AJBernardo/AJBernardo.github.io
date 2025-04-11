@@ -60,6 +60,7 @@
         .button-link:hover {
             background-color: #FADCD9;
         }
+
     </style>
 </head>
 
@@ -76,18 +77,18 @@
         <div class="container-fluid">
             <div class=" main-container row">
                 <div class="col-12 col-lg-3 p-4">
-                    <div class="card rounded-3 shadow">
+                    <div class="card rounded-3 shadow" style="background-color: #F9F1F0;">
                         <div class="container-fluid">
                             <div class="row p-2 rounded-top" style="background-color: #F8AFA6;">
                                 <img src="assets/img/CafeLycoReco_Wordmark.png" alt="Cafe LycoReco"
                                     class="main-logo img-fluid">
                             </div>
                             <div class="row">
-                                <button class="button-link">Home</button>
-                                <button class="button-link">Menu</button>
-                                <button class="button-link">LycoReco Latest</button>
-                                <button class="button-link">Our Staff</button>
-                                <button class="button-link">FAQs</button>
+                                <button class="button-link"><img src="assets/img/homeIcon.svg" class="img-fluid pe-3" style="max-height: 50px;">Home</button>
+                                <button class="button-link"><img src="assets/img/menuIcon.svg" class="img-fluid pe-3" style="max-height: 50px;">Menu</button>
+                                <button class="button-link"><img src="assets/img/latestIcon.svg" class="img-fluid pe-3" style="max-height: 50px;">LycoReco Latest</button>
+                                <button class="button-link"><img src="assets/img/staffIcon.svg" class="img-fluid pe-3" style="max-height: 50px;">Our Staff</button>
+                                <button class="button-link"><img src="assets/img/faqsIcon.svg" class="img-fluid pe-3" style="max-height: 50px;">FAQs</button>
                             </div>
                         </div>
                     </div>
