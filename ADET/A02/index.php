@@ -7,6 +7,8 @@
     <title>Café LycoReco</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="assets/fonts/font.css" rel="stylesheet">
     <link href="assets/img/CafeLycoReco_Logo.svg" rel="icon">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -24,8 +26,8 @@
 
         <div class="container-fluid">
             <div class=" main-container row">
-                <div class="col-12 col-lg-5 col-xl-4 col-xxl-3 p-4">
-                    <div class="card rounded-3 shadow" style="background-color: #F9F1F0;">
+                <div class="col-12 col-xl-4 col-xxl-3 p-4">
+                    <div class="card main-card rounded-3 shadow" style="background-color: #F9F1F0;">
                         <div class="container-fluid">
                             <div class="row p-2 rounded-top" style="background-color: #F8AFA6;">
                                 <img src="assets/img/CafeLycoReco_Wordmark.png" alt="Cafe LycoReco"
@@ -46,8 +48,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-lg-7 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-md-0">
-                    <div class="card rounded-3 shadow overflow-hidden">
+                <div class=" col-12 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-md-0">
+                    <div class="card main-card rounded-3 shadow overflow-hidden">
                         <?php include('pages/home.php'); ?>
                     </div>
                 </div>
@@ -58,18 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <!-- <script>
-        document.addEventListener("scroll", () => {
-            const navbar = document.querySelector(".navbar");
-            if (window.scrollY > 100) {
-                navbar.style.opacity = "1";
-                navbar.style.visibility = "visible";
-            } else {
-                navbar.style.opacity = "0";
-                navbar.style.visibility = "hidden";
-            }
-        });
-    </script> -->
 </body>
 
 </html>
