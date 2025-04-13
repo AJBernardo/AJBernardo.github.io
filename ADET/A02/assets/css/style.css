@@ -114,6 +114,10 @@ p, h4, h6{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
+
+.body{
+    font-size: 1rem;
+}
 @media(max-width: 1456px){
     .location{
         width: 350px !important; 
@@ -141,5 +145,11 @@ p, h4, h6{
 @media(max-width: 992px){
     .carousel-caption p{
         display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .body{
+        font-size: 0.7rem;
     }
 }
