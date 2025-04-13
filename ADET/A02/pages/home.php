@@ -73,8 +73,8 @@
     </div>
 
     <div class="container my-5">
-        <div class="row px-5">
-            <div class="col-6">
+        <div class="row px-3 px-lg-5">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
                 <div class="card text-center">
                     <h1 class="title">Cafe Hours</h1>
                     <h4 class="mt-3">MON -THURS</h4>
@@ -87,18 +87,62 @@
                     <h6 class="mb-3" style="font-weight: 200;">9:00 AM TO 7:00PM</h6>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="card text-center">
                     <h1 class="title">Store Location</h1>
                     <p class="px-5">Okinawa Nakagami-gun Chatancho Mihama 15-69 Carnival Park Mihama 214, Japan</p>
                     <div class="map d-flex justify-content-center overflow-hidden mb-5">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3621.503321594295!2d125.1827158226718!3d24.81245543138888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ4JzQ0LjMiTiAxMjXCsDEwJzU3LjUiRQ!5e0!3m2!1sen!2sph!4v1744482111101!5m2!1sen!2sph"
-                            style="border:0; border-radius: 10px; width: 400px; height: 240px;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            class="location" style="border:0; border-radius: 10px; width: 400px; height: 240px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="tour container-fluid my-5">
+        <h1 class="text-white text-center py-5">Look Around Our Store</h1>
+        <div class="container d-flex justify-content-center pb-5">
+            <iframe width="720" height="405"
+                src="https://www.youtube.com/embed/0AOIWBBymOs?autoplay=1&mute=1&loop=1&playlist=0AOIWBBymOs"
+                class="rounded-2" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <div class="container px-3 px-lg-5 my-5">
+        <h1 class="title text-center">Want to Book A Reservation</h1>
+        <p class="mt-5 text-center fs-6 fs-lg-5">To book a reservation, please contact us directly — we’ll be happy to save you
+            the
+            perfect seat! Whether you're planning a quiet coffee break or a special gathering, our cozy café is ready to
+            welcome you.
+        </p>
+        <div class="row text-center my-5">
+            <div class="col-12 col-md-4 my-5">
+                <h4>CALL US</h4>
+                <a href="#"><h6 class="text-black">03-5827-9645</h6></a>
+                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">Call us to reserve your seat or leave a secret
+                    message. (We promise Chisato won't answer too cheerfully... or maybe she will (˶˃ ᵕ ˂˶)! )</p>
+            </div>
+            <div class="col-12 col-md-4 my-5">
+                <h4>OUR EMAIL</h4>
+                <a href="#"><h6 class="text-black">reservations@lycoreco.jp</h6></a>
+                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">For bookings, questions, or a casual chat with our
+                    staff. (Kurumi might read it first ( ╹ -╹)? ).
+                </p>
+            </div>
+            <div class="col-12 col-md-4 my-5">
+                <h4>OUR INSTAGRAM</h4>
+                <a href="#"><h6 class="text-black">@lycoreco.okinawa</h6></a>
+                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">Slide into our DMs for a booking. (Mizuki will handle
+                    it… in her own way. ( •̯́ ₃ •̯̀) )</p>
+            </div>
+        </div>
+    </div>
+
+
 </div>

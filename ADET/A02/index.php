@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-md-0">
+                <div class=" col-12 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-xl-0">
                     <div class="card main-card rounded-3 shadow overflow-hidden">
                         <?php include('pages/home.php'); ?>
                     </div>
