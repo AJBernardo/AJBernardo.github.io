@@ -97,4 +97,46 @@ function createMenus()
         </div>
     </div><?php
 }
+
+function loadCarouselSlides(){
+    $index = 0;
+    $slides = [
+        ["feature1.jpg", "Our Store 💖", "A cozy retreat for warmth, coffee, and comfort"],
+        ["feature2.png", "Our Beloved Staff", "Friendly faces, skilled hands — our staff serve with heart."],
+        ["feature3.png", "Game On", "Laughter, lattes, and a little friendly chaos!"],
+        ["feature4.png", "Santa on Cafe LycoReco", "Warm drinks, bright lights, and holiday cheer all around! Ho ho ho!"],
+        ["feature5.png", "Cafe LycoReco Loves You", "Love brews here — one cup, one smile at a time."]
+    ];
+
+    foreach ($slides as $slide) {
+        $isActive = $index === 0 ? 'active' : '';
+        echo '<div class="carousel-item '. $isActive .'">
+                <img src="assets/img/'. $slide[0] .'" class="img-fluid carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>'. $slide[1] .'</h5>
+                    <p class="text-wrap">'. $slide[2] .'</p>
+                </div>
+            </div>';
+
+        $index += 1;
+    }
+}
+
+function loadContacts(){
+    $contacts = [
+        ["CALL US", "03-5827-9645", "Call us to reserve your seat or leave a secret message. (We promise Chisato won't answer too cheerfully... or maybe she will (˶˃ ᵕ ˂˶)! )"],
+        ["OUR EMAIL", "reservations@lycoreco.jp", "For bookings, questions, or a casual chat with our staff. (Kurumi might read it first ( ╹ -╹)? )"],
+        ["OUR INSTAGRAM", "@lycoreco.okinawa", "Slide into our DMs for a booking. (Mizuki will handle it… in her own way. ( •̯́ ₃ •̯̀) )"],
+    ];
+    
+    ?><div class="row text-center my-5"><?php
+        foreach($contacts as $contact){
+            echo '<div class="col-12 col-md-4 my-5">
+                    <h4>'. $contact[0] .'</h4>
+                    <a href="#"><h6 class="text-black">'. $contact[1] .'</h6></a>
+                    <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">'. $contact[2] .'</p>
+                </div>';
+        }?> 
+    </div><?php
+}
 ?>

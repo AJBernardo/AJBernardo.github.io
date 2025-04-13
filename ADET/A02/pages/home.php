@@ -13,41 +13,7 @@
                 aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/feature1.jpg" class="img-fluid carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Store 💖</h5>
-                    <p class="text-wrap">A cozy retreat for warmth, coffee, and comfort</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/feature2.png" class="img-fluid carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Beloved Staff</h5>
-                    <p class="text-wrap">Friendly faces, skilled hands — our staff serve with heart.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/feature3.png" class="img-fluid carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Game On</h5>
-                    <p class="text-wrap">Laughter, lattes, and a little friendly chaos!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/feature4.png" class="img-fluid carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Santa on Cafe LycoReco</h5>
-                    <p class="text-wrap">Warm drinks, bright lights, and holiday cheer all around! Ho ho ho!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/feature5.png" class="img-fluid carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Cafe LycoReco Loves You</h5>
-                    <p class="text-wrap">Love brews here — one cup, one smile at a time.</p>
-                </div>
-            </div>
+            <?php loadCarouselSlides(); ?>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -116,32 +82,11 @@
 
     <div class="container px-3 px-lg-5 my-5">
         <h1 class="title text-center">Want to Book A Reservation</h1>
-        <p class="mt-5 text-center fs-6 fs-lg-5">To book a reservation, please contact us directly — we’ll be happy to save you
-            the
+        <p class="mt-5 text-center fs-6 fs-lg-5">To book a reservation, please contact us directly — we’ll be happy to save you the
             perfect seat! Whether you're planning a quiet coffee break or a special gathering, our cozy café is ready to
             welcome you.
         </p>
-        <div class="row text-center my-5">
-            <div class="col-12 col-md-4 my-5">
-                <h4>CALL US</h4>
-                <a href="#"><h6 class="text-black">03-5827-9645</h6></a>
-                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">Call us to reserve your seat or leave a secret
-                    message. (We promise Chisato won't answer too cheerfully... or maybe she will (˶˃ ᵕ ˂˶)! )</p>
-            </div>
-            <div class="col-12 col-md-4 my-5">
-                <h4>OUR EMAIL</h4>
-                <a href="#"><h6 class="text-black">reservations@lycoreco.jp</h6></a>
-                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">For bookings, questions, or a casual chat with our
-                    staff. (Kurumi might read it first ( ╹ -╹)? ).
-                </p>
-            </div>
-            <div class="col-12 col-md-4 my-5">
-                <h4>OUR INSTAGRAM</h4>
-                <a href="#"><h6 class="text-black">@lycoreco.okinawa</h6></a>
-                <p class="mt-3 px-5 px-lg-3" style="font-size: 0.7rem;">Slide into our DMs for a booking. (Mizuki will handle
-                    it… in her own way. ( •̯́ ₃ •̯̀) )</p>
-            </div>
-        </div>
+        <?php loadContacts(); ?>
     </div>
 
 
