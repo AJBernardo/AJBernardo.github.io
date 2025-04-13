@@ -1,6 +1,7 @@
 * {
     font-family: "Vatona";
 }
+
 .navbar {
     background-image: url(../img/navBg.gif);
     background-size: cover;
@@ -90,11 +91,6 @@ a {
     border-radius: 20px;
 }
 
-p, h4, h6{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-}
-
 .carousel-btn{
     background-color: #F79489 !important;
 }
@@ -117,10 +113,23 @@ p, h4, h6{
     height: 100vh;
 }
 
+.faqs-page{
+    background: url(../img/faqsBg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.faqs-card{
+    border: 3px solid rgba(247, 148, 137, 1);
+    background-color: #F9F1F0;
+}
+
 .menu{
     background-color: rgba(255, 255, 255, 0.7)
 }
 
+/* FONT SETTINGS */
 .head{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -133,6 +142,13 @@ p, h4, h6{
 .xs-body{
     font-size: 0.9rem;
 }
+
+p, h4, h6{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+/* MEDIA QUERIES */
 @media(max-width: 1456px){
     .location{
         width: 350px !important; 
@@ -166,5 +182,9 @@ p, h4, h6{
 @media(max-width: 576px){
     .body{
         font-size: 0.7rem;
+    }
+
+    .head{
+        font-size: 1rem !important;
     }
 }
