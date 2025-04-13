@@ -46,6 +46,7 @@ a {
     height: 60px;
     border: 0px none;
     background-color: #F9F1F0;
+    width: 100%;
 }
 
 .button-link:hover {
@@ -53,26 +54,24 @@ a {
 }
 
 /* SCROLLBAR SETTINGS */
-.home {
+.page {
     overflow-y: scroll;
-    /* scrollbar-width: thin;
-    scrollbar-color: #FADCD9 #F8AFA6; */
 }
 
-.home::-webkit-scrollbar {
+.page::-webkit-scrollbar {
     width: 10px;
 }
 
-.home::-webkit-scrollbar-track {
+.page::-webkit-scrollbar-track {
     background: #FADCD9;
 }
 
-.home::-webkit-scrollbar-thumb {
+.page::-webkit-scrollbar-thumb {
     background: #F79489;
     border-radius: 10px;
 }
 
-.home::-webkit-scrollbar-thumb:hover {
+.page::-webkit-scrollbar-thumb:hover {
     background: #FADCD9;
 }
 
@@ -102,6 +101,18 @@ p, h4, h6{
 
 .tour{
     background-color: #F79489;
+}
+
+.staff-page{
+    background: url(../img/staffBg.png);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+}
+
+.head{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 @media(max-width: 1456px){
     .location{

@@ -40,8 +40,8 @@
                                         style="max-height: 50px;">Menu</button>
                                 <button class="button-link"><img src="assets/img/latestIcon.svg" class="img-fluid pe-3"
                                         style="max-height: 50px;">LycoReco Latest</button>
-                                <button class="button-link"><img src="assets/img/staffIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">Our Staff</button>
+                                <a href="" class="m-0"><button class="button-link"><img src="assets/img/staffIcon.svg" class="img-fluid pe-3"
+                                        style="max-height: 50px;">Our Staff</button></a>
                                 <button class="button-link"><img src="assets/img/faqsIcon.svg" class="img-fluid pe-3"
                                         style="max-height: 50px;">FAQs</button>
                             </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class=" col-12 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-xl-0">
                     <div class="card main-card rounded-3 shadow overflow-hidden">
-                        <?php include('pages/home.php'); ?>
+                        <?php include('pages/staff.php'); ?>
                     </div>
                 </div>
             </div>
