@@ -110,6 +110,17 @@ p, h4, h6{
     height: 100vh;
 }
 
+.menu-page{
+    background: url(../img/menuBg.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
 .head{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -117,6 +128,10 @@ p, h4, h6{
 
 .body{
     font-size: 1rem;
+}
+
+.xs-body{
+    font-size: 0.9rem;
 }
 @media(max-width: 1456px){
     .location{
