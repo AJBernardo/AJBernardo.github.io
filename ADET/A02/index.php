@@ -27,23 +27,25 @@
         <div class="container-fluid">
             <div class=" main-container row">
                 <div class="col-12 col-xl-4 col-xxl-3 p-4">
-                    <div class="card main-card rounded-3 shadow" style="background-color: #F9F1F0;">
+                    <div class="card main-card navigation rounded-3 shadow overflow-hidden" style="background-color: #F9F1F0;">
                         <div class="container-fluid">
                             <div class="row p-2 rounded-top" style="background-color: #F8AFA6;">
                                 <img src="assets/img/CafeLycoReco_Wordmark.png" alt="Cafe LycoReco"
                                     class="main-logo img-fluid">
                             </div>
                             <div class="row">
-                                <button class="button-link"><img src="assets/img/homeIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">Home</button>
-                                <button class="button-link"><img src="assets/img/menuIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">Menu</button>
-                                <button class="button-link"><img src="assets/img/latestIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">LycoReco Latest</button>
-                                <a href="" class="m-0"><button class="button-link"><img src="assets/img/staffIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">Our Staff</button></a>
-                                <button class="button-link"><img src="assets/img/faqsIcon.svg" class="img-fluid pe-3"
-                                        style="max-height: 50px;">FAQs</button>
+                                <div class="col-3 col-xl-12 p-0">
+                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/homeIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Home</span></button>
+                                </div>
+                                <div class="col-3 col-xl-12 p-0">
+                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/menuIcon.png"class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Menu</span></button>
+                                </div>
+                                <div class="col-3 col-xl-12 p-0">
+                                    <a href="" class="m-0"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/staffIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Our Staff</span></button></a>
+                                </div>
+                                <div class="col-3 col-xl-12 p-0">
+                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/faqsIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">FAQs</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>

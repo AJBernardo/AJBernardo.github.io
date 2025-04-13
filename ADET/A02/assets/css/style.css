@@ -171,11 +171,33 @@ p, h4, h6{
     .carousel-caption p{
         display: none;
     }
+
+    .main-card.navigation{
+        height: auto;
+    }
+
+    .button-link{
+        border: 2px solid rgba(247, 148, 137, 0.5);
+        font-size: 1rem;
+
+    }
 }
 
 @media(max-width: 992px){
     .carousel-caption p{
         display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .button-link{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 600px){
+    .button-text{
+        display: none !important;
     }
 }
 
