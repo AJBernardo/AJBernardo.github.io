@@ -1,3 +1,13 @@
+<?php
+$currentPage = "home";
+
+if(isset($_GET['page'])){
+    $currentPage = $_GET['page'];
+}else{
+    header("Location: ?page=home");
+}
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -35,16 +45,16 @@
                             </div>
                             <div class="row">
                                 <div class="col-3 col-xl-12 p-0">
-                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/homeIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Home</span></button>
+                                    <a href="?page=home"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/homeIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Home</span></button></a>
                                 </div>
                                 <div class="col-3 col-xl-12 p-0">
-                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/menuIcon.png"class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Menu</span></button>
+                                    <a href="?page=menu"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/menuIcon.png"class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Menu</span></button></a>
                                 </div>
                                 <div class="col-3 col-xl-12 p-0">
-                                    <a href="" class="m-0"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/staffIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Our Staff</span></button></a>
+                                    <a href="?page=staff"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/staffIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">Our Staff</span></button></a>
                                 </div>
                                 <div class="col-3 col-xl-12 p-0">
-                                    <button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/faqsIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">FAQs</span></button>
+                                    <a href="?page=faqs"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/faqsIcon.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">FAQs</span></button></a>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +62,7 @@
                 </div>
                 <div class=" col-12 col-xl-8 col-xxl-9 py-4 pe-4 ps-4 ps-xl-0">
                     <div class="card main-card rounded-3 shadow overflow-hidden">
-                        <?php include('pages/faqs.php'); ?>
+                        <?php include('pages/'. $currentPage .'.php'); ?>
                     </div>
                 </div>
             </div>
