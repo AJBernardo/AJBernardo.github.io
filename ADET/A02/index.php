@@ -4,10 +4,28 @@ $currentPage = "home";
 
 if (isset($_GET['page'])) {
     $currentPage = $_GET['page'];
+    switch ($currentPage) {
+        case "home":
+            $currentPage = "home";
+            break;
+        case "menu":
+            $currentPage = "menu";
+            break;
+        case "staff":
+            $currentPage = "staff";
+            break;
+        case "faqs":
+            $currentPage = "faqs";
+            break;
+        default:
+            header("Location: ?page=home");
+            break;
+    }
 } else {
     header("Location: ?page=home");
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -37,10 +55,12 @@ if (isset($_GET['page'])) {
         <div class="container-fluid">
             <div class=" main-container row">
                 <div class="col-12 col-xl-4 col-xxl-3 p-4">
-                    <div class="card main-card navigation rounded-3 shadow overflow-hidden" style="background-color: #F9F1F0;">
+                    <div class="card main-card navigation rounded-3 shadow overflow-hidden"
+                        style="background-color: #F9F1F0;">
                         <div class="container-fluid">
                             <div class="row p-2 rounded-top" style="background-color: #F8AFA6;">
-                                <img src="assets/img/CafeLycoReco_Wordmark.png" alt="Cafe LycoReco" class="main-logo img-fluid">
+                                <img src="assets/img/CafeLycoReco_Wordmark.png" alt="Cafe LycoReco"
+                                    class="main-logo img-fluid">
                             </div>
                             <div class="row">
                                 <?php createButtons(); ?>
