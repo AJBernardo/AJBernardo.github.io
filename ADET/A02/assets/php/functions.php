@@ -7,7 +7,7 @@ function createButtons()
 
     foreach ($btnLinks as $btnLink => $icon) {
         echo '<div class="col-3 col-xl-12 p-0">
-                <a href="?page=' . $pages[$index] . '"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/' . $icon . '.png" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">' . $btnLink . '</span></button></a>
+                <a href="?page=' . $pages[$index] . '"><button class="button-link px-0 px-sm-1 px-md-3 text-center text-xl-start"><img src="assets/img/' . $icon . '.png" alt="' . $btnLink . '" class="img-fluid pe-0 pe-sm-3" style="max-height: 50px;"><span class="button-text">' . $btnLink . '</span></button></a>
             </div>';
 
         $index += 1;
@@ -111,7 +111,7 @@ function loadCarouselSlides(){
     foreach ($slides as $slide) {
         $isActive = $index === 0 ? 'active' : '';
         echo '<div class="carousel-item '. $isActive .'">
-                <img src="assets/img/'. $slide[0] .'" class="img-fluid carousel-img" alt="...">
+                <img src="assets/img/'. $slide[0] .'" class="img-fluid carousel-img" alt="'. $slide[1] .'">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>'. $slide[1] .'</h5>
                     <p class="text-wrap">'. $slide[2] .'</p>

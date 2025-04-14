@@ -46,7 +46,7 @@ if (isset($_GET['page'])) {
     <div>
         <nav class="navbar bg-navbar py-0">
             <div class="container-fluid d-flex justify-content-center align-content-center">
-                <a href="#">
+                <a href="?page=home">
                     <h1 class="diplay-1 title text-center">Cafe LycoReco</h1>
                 </a>
             </div>

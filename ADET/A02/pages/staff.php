@@ -4,7 +4,7 @@
         <div class="row">
 
             <div class="col-12 col-lg-6">
-                <img src="assets/img/staff.png" alt="" class="img-fluid rounded-2 shadow my-5"
+                <img src="assets/img/staff.png" alt="LycoReco Staff" class="img-fluid rounded-2 shadow my-5"
                     style="max-height: 250px;">
             </div>
 
@@ -20,7 +20,7 @@
         </div>
         <div class="row mb-5">
             <div class="col-12 col-xl-6 order-1 order-md-2">
-                <img src="assets/img/chisato.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <img src="assets/img/chisato.png" alt="Chisato Nishikigi" class="img-fluid" style="max-height: 400px;">
             </div>
             <div class="col-12 col-xl-6 order-2 order-md-1 text-center text-md-start text-lg-end">
                 <h1 class="head fs-2">CHISATO NISHIKIGI</h1>
@@ -36,7 +36,7 @@
 
         <div class="row my-5">
             <div class="col-12 col-xl-6 order-1 order-md-2 order-xl-1">
-                <img src="assets/img/takina.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <img src="assets/img/takina.png" alt="Takina Inoue" class="img-fluid" style="max-height: 400px;">
             </div>
             <div class="col-12 col-xl-6 order-2 order-md-1 order-xl-2 text-center text-md-start">
                 <h1 class="head fs-2">TAKINA INOUE</h1>
@@ -51,7 +51,7 @@
 
         <div class="row my-5">
             <div class="col-12 col-xl-6 order-1 order-md-2">
-                <img src="assets/img/kurumi.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <img src="assets/img/kurumi.png" alt="Kurumi | Walnut" class="img-fluid" style="max-height: 400px;">
             </div>
             <div class="col-12 col-xl-6 order-2 order-md-1 text-center text-md-start text-lg-end">
                 <h1 class="head fs-2">KURUMI | WALNUT</h1>
@@ -66,7 +66,7 @@
 
         <div class="row my-5">
             <div class="col-12 col-xl-6 order-1 order-md-2 order-xl-1">
-                <img src="assets/img/mizuki.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <img src="assets/img/mizuki.png" alt="Mizuki Nakihara" class="img-fluid" style="max-height: 400px;">
             </div>
             <div class="col-12 col-xl-6 order-2 order-md-1 order-xl-2 text-center text-md-start">
                 <h1 class="head fs-2">MIZUKI NAKIHARA</h1>
@@ -81,7 +81,7 @@
 
         <div class="row my-5">
             <div class="col-12 col-xl-6 order-1 order-md-2">
-                <img src="assets/img/mika.png" alt="" class="img-fluid" style="max-height: 400px;">
+                <img src="assets/img/mika.png" alt="Mika | Sensei" class="img-fluid" style="max-height: 400px;">
             </div>
             <div class="col-12 col-xl-6 order-2 order-md-1 text-center text-md-start text-lg-end">
                 <h1 class="head fs-2">MIKA</h1>
