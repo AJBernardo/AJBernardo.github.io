@@ -5,35 +5,101 @@
     --primaryBackgroundColor: #21211F;
 }
 
-.navbar{
+* {
+    font-family: var(--primaryFont);
+}
+
+.navbar {
     background-color: var(--primaryBackgroundColor);
     transition: background-color 0.3s ease-in-out;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: white;
     color: white;
 }
 
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.7)!important;
-}  
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.7) !important;
+}
 
 .nav-link {
-    font-family: var(--primaryFont);
     font-size: 1.5rem;
     --bs-nav-link-color: white;
     --bs-nav-link-hover-color: var(--highlightColor);
     --bs-nav-link-disabled-color: var(--disabledColor);
 }
 
-.nav-link.active{
-    color:var(--highlightColor) !important;
+.nav-link.active {
+    color: var(--highlightColor) !important;
 }
 
-.dedsec-video{
+.dedsec-video {
     max-height: 695px;
     width: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+/* FOR ECHOED TEXT EFFECT */
+.text-stack {
+    position: relative;
+    display: inline-block;
+}
+
+.back-text,
+.front-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.front-text {
+    color: black;
+    z-index: 1;
+}
+
+.back-text {
+    color: var(--highlightColor);
+    transform: translate(10px, 10px);
+    z-index: 0;
+}
+
+.btn {
+    --bs-btn-border-width: 3px;
+    width: 150px !important;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--primaryBackgroundColor);
+    --bs-btn-bg: white;
+    --bs-btn-border-color: var(--primaryBackgroundColor);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: var(--primaryBackgroundColor);
+    --bs-btn-hover-border-color: var(--primaryBackgroundColor);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--primaryBackgroundColor);
+    --bs-btn-active-bg: var(--highlightColor);
+    --bs-btn-active-border-color: var(--primaryBackgroundColor);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--disabledColor);
+    --bs-btn-disabled-border-color: var(var(--primaryBackgroundColor))
+}
+
+.window-card {
+    border: 5px solid rgba(2, 2, 2, 1);
+}
+
+.window-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgba(2, 2, 2, 1);
+    background-color: var(--highlightColor);
+}
+
+.propaganda{
+    background-color: var(--primaryBackgroundColor);
+    color: white;
 }

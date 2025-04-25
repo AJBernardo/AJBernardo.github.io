@@ -4,3 +4,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+.title{
+    font-size: 6rem;
+}
+
+.subtitle{
+    font-size: 4rem;
+}
+
+.heading{
+    font-size: 2rem;
+}
+
+.subheading{
+    font-size: 1.2rem;
+}
