@@ -1,0 +1,39 @@
+:root {
+    --primaryFont: "Hacked", "Montserrat", sans-serif;
+    --highlightColor: #B3E10D;
+    --disabledColor: #888888;
+    --primaryBackgroundColor: #21211F;
+}
+
+.navbar{
+    background-color: var(--primaryBackgroundColor);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-toggler{
+    background-color: white;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.7)!important;
+}  
+
+.nav-link {
+    font-family: var(--primaryFont);
+    font-size: 1.5rem;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: var(--highlightColor);
+    --bs-nav-link-disabled-color: var(--disabledColor);
+}
+
+.nav-link.active{
+    color:var(--highlightColor) !important;
+}
+
+.dedsec-video{
+    max-height: 695px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
