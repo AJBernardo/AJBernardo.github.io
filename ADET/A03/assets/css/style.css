@@ -9,6 +9,12 @@
     font-family: var(--primaryFont);
 }
 
+a,
+button,
+.clickable {
+    cursor: url('../img/cursor.cur') 0 0, pointer !important;
+}
+
 .navbar {
     background-color: var(--primaryBackgroundColor);
     transition: background-color 0.3s ease-in-out;
@@ -99,7 +105,33 @@
     background-color: var(--highlightColor);
 }
 
-.propaganda{
+.propaganda {
     background-color: var(--primaryBackgroundColor);
     color: white;
+}
+
+.left-upper-card {
+    min-height: 210px;
+    max-height: 210px;
+    height: auto;
+}
+
+.left-mid-card {
+    height: 387px;
+}
+
+.left-bottom-card {
+    height: 307px;
+}
+
+.right-upper-card {
+    height: 275px;
+}
+
+.right-mid-card {
+    height: 360px;
+}
+
+.right-bottom-card {
+    height: 269px;
 }
