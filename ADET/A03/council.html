@@ -35,27 +35,58 @@
         <div class="container-fluid p-0 py-5" style="background-color: var(--primaryBackgroundColor);">
             <div class="container my-5">
                 <div class="row text-white">
-                    <h1 class="title">THE <span class="title me-3" style="color: var(--highlightColor)">NEW</span>WAVE</h1>
+                    <h1 class="title">THE <span class="title me-3" style="color: var(--highlightColor)">NEW</span>WAVE
+                    </h1>
                     <div class="col-7">
                         <h3 class="heading mb-5">A SECRET SOCIETY OF HACKERS,<br>SERVING OUR OWN BRAND OF JUSTICE</h3>
-                        <p class="subheading pe-5">In the heart of San Francisco—the birthplace of CTOS 2.0 and Silicon Valley’s
-                            digital empire—the Council stands as DedSec’s core resistance cell. Composed of elite hackers,
-                            engineers, and rogue visionaries, the Council operates in the shadows to dismantle surveillance,
-                            exploit corrupt systems, and ignite the spark of digital rebellion. They are not just coders—they
-                            are culture-jammers, truth-smugglers, and freedom architects. Every line of code, every leak, every
-                            breach is a strike against control. This is where the revolution begins.</p>
+                        <p class="subheading pe-5">In the heart of San Francisco—the birthplace of CTOS 2.0 and Silicon
+                            Valley’s digital empire—the Council stands as DedSec’s core resistance cell. Composed of elite
+                            hackers, engineers, and rogue visionaries, the Council operates in the shadows to dismantle
+                            surveillance, exploit corrupt systems, and ignite the spark of digital rebellion. They are not just
+                            coders—they are culture-jammers, truth-smugglers, and freedom architects. Every line of code, every
+                            leak, every breach is a strike against control. This is where the revolution begins.</p>
                     </div>
                     <div class="col-5 p-0 d-flex justify-content-center">
-                        <img src="assets/img/councilOne.webp" alt="The New Wave is Here!" class="img-fluid object-fit-contain" style="rotate: 8deg;">
+                        <img src="assets/img/councilOne.webp" alt="The New Wave is Here!"
+                            class="img-fluid object-fit-contain" style="rotate: 8deg;">
                     </div>
-                    <h2 class="lg-heading mt-5 pt-5 text-center"><span class="lg-heading" style="color: var(--highlightColor)">We are not thieves.</span> We are not murderers. <span class="lg-heading" style="color: var(--highlightColor)">We are awake.</span></h2>
+                    <h2 class="lg-heading mt-5 pt-5 text-center"><span class="lg-heading"
+                            style="color: var(--highlightColor)">We are not thieves.</span> We are not murderers. <span
+                            class="lg-heading" style="color: var(--highlightColor)">We are awake.</span></h2>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="bg-members container-fluid py-5">
             <div class="row">
-
+                <div
+                    class="col-12 col-lg-2 order-1 order-lg-1 d-flex flex-column justify-content-center align-items-center">
+                    <button class="btn-members" onclick="displayMember('marcus')"><img src="assets/img/marcusIcon.webp"
+                            alt="" class="img-fluid"></button>
+                    <button class="btn-members" onclick="displayMember('sitara')"><img src="assets/img/sitaraIcon.webp"
+                            alt="" class="img-fluid"></button>
+                    <button class="btn-members" onclick="displayMember('wrench')"><img src="assets/img/wrenchIcon.webp"
+                            alt="" class="img-fluid"></button>
+                    <button class="btn-members" onclick="displayMember('josh')"><img src="assets/img/joshIcon.webp"
+                            alt="" class="img-fluid"></button>
+                    <button class="btn-members" onclick="displayMember('ray')"><img src="assets/img/tboneIcon.webp"
+                            alt="" class="img-fluid"></button>
+                </div>
+                <div class="col-12 col-lg-2 order-3 order-lg-2 pt-xl-5 px-0" id="member-name">
+                    <h1 class="lg-heading text-white text-end"><span class="lg-heading me-3"
+                            style="color: var(--highlightColor)">MARCUS</span> HOLLOWAY</h1>
+                </div>
+                <div class="col-12 col-lg-4 order-2 order-lg-3 d-flex justify-content-center align-items-center"
+                    id="member-appearance">
+                    <img src="assets/img/marcus.webp" alt="Marcus Holloway" class="img-fluid"
+                        style="max-height: 600px;">
+                </div>
+                <div class="col-12 col-lg-4 order-4 order-lg-4 d-flex align-items-end" id="member-description">
+                    <p class="subheading w-75 text-white">The brilliant hacker and main character. Framed by CTOS 2.0
+                        for a crime he
+                        didn't commit, Marcus joins DedSec to expose the corruption of corporations and reclaim freedom
+                        for the people. He's smart, witty, and deeply believes in using technology for liberation.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -63,6 +94,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/displayMember.js"></script>
 </body>
 
 </html>

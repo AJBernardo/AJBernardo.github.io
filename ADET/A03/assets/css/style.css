@@ -145,4 +145,22 @@ button,
     min-height: 250px;
 }
 
+.bg-members{
+    background: url('../img/councilBackground.webp') no-repeat center center;
+    background-size: cover;
+}
+
+.btn-members{
+    max-height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-members img{
+    object-fit: cover;
+    object-position: center center;
+}
+
 
