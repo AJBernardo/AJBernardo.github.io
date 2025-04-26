@@ -1,0 +1,22 @@
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes pop{
+    0%{
+        scale: 0;
+    }
+    80%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}

@@ -95,6 +95,11 @@ button,
 
 .window-card {
     border: 5px solid rgba(2, 2, 2, 1);
+    scale: 0;
+}
+
+.window-card.pop-animation {
+    animation: pop 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 .window-top {

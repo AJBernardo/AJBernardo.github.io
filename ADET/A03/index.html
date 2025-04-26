@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
     <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/img/dedsecLogo2.webp" rel="icon">
 </head>
@@ -180,6 +181,17 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="assets/js/navbar.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const windowCards = document.querySelectorAll('.window-card');
+
+            if (window.scrollY > 710) {
+                windowCards.forEach(card => {
+                    card.classList.add('pop-animation');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
