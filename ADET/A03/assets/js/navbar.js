@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     <a class="nav-link" href="council.html">THE COUNCIL</a>
                     <a class="nav-link" href="#">ABOUT</a>
                     <a class="nav-link" href="#">WATCHDOGS</a>

@@ -5,12 +5,20 @@
     font-style: normal;
 }
 
+.lg-title{
+    font-size: 8rem;
+}
+
 .title{
     font-size: 6rem;
 }
 
 .subtitle{
     font-size: 4rem;
+}
+
+.lg-heading{
+    font-size: 3rem;
 }
 
 .heading{
