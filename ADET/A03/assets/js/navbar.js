@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     <a class="nav-link" href="council.html">THE COUNCIL</a>
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
                     <a class="nav-link" href="#">WATCHDOGS</a>
                 </div>
             </div>
