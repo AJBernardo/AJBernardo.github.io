@@ -1,6 +1,6 @@
 document.getElementById('footer-container').innerHTML = 
 ` <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top text-black">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 text-black">
             <p class="col-md-4 mb-0 text-white">&copy; 2025 DEDSEC</p>
 
             <a href="./"
