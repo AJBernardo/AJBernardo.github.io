@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("navbar-container").innerHTML = 
     `<nav class="navbar navbar-expand-lg p-0 fixed-top">
         <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand" href="#"><img src="assets/img/dedsecLogo.webp" alt="DedSec" class="img-fluid"
+            <a class="navbar-brand" href="./"><img src="assets/img/dedsecLogo.webp" alt="DedSec" class="img-fluid"
                     style="max-height: 50px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                     <a class="nav-link" href="council.html">THE COUNCIL</a>
                     <a class="nav-link" href="about.html">ABOUT</a>
-                    <a class="nav-link" href="#">WATCHDOGS</a>
+                    <a class="nav-link" href="https://www.ubisoft.com/en-sg/game/watch-dogs/watch-dogs-2" target="_blank">WATCHDOGS</a>
                 </div>
             </div>
         </div>
