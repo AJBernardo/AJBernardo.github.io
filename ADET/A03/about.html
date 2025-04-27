@@ -38,7 +38,7 @@
         </div>
 
         <div class="container-fluid py-5" style="background-color: var(--primaryBackgroundColor);">
-            <div class="container">
+            <div class="container" id="galleries">
                 <div class="row text-white">
                     <h1 class="title">THE ONES BEHIND THE MASK</h1>
                     <p class="subheading">DedSec is an underground network of hackers united by a single mission: to
@@ -46,62 +46,7 @@
                         believe in transparency, truth, and the unstoppable power of the people. We are not
                         criminals. We are the resistance. We are DedSec.</p>
                 </div>
-                <div class="row py-5 mt-5 grid-gallery">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery1.webp" alt="DedSec Gallery: Photo 1"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery2.webp" alt="DedSec Gallery: Photo 2"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery3.webp" alt="DedSec Gallery: Photo 3"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery4.webp" alt="DedSec Gallery: Photo 4"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery5.webp" alt="DedSec Gallery: Photo 5"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery6.webp" alt="DedSec Gallery: Photo 6"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery7.webp" alt="DedSec Gallery: Photo 7"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery8.webp" alt="DedSec Gallery: Photo 8"
-                            class="gallery img-fluid"></div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="assets/img/gallery9.webp" alt="DedSec Gallery: Photo 9"
-                            class="gallery img-fluid"></div>
-                </div>
-
-                <div class="row py-5 carousel-gallery">
-                    <div class="col ">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="assets/img/gallery1.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 1">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery2.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 2">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery3.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 3">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery4.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 4">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery5.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 5">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery6.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 6">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery7.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 7">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery8.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 8">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/gallery9.webp" class="img-fluid w-100" alt="DedSec Gallery: Photo 9">
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+                <!-- loadGalleries.js -->
             </div>
         </div>
 
@@ -183,14 +128,16 @@
                         style="scale: 2;">JOIN US</button></div>
             </div>
         </div>
-        <div class="container-fluid px-3 px-xl-5" id="footer-container" style="background-color: var(--primaryBackgroundColor);">
-           <!-- footer.js -->
+        <div class="container-fluid px-3 px-xl-5" id="footer-container"
+            style="background-color: var(--primaryBackgroundColor);">
+            <!-- footer.js -->
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/loadGalleries.js"></script>
     <script src="assets/js/footer.js"></script>
 </body>
 
