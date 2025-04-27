@@ -1,0 +1,89 @@
+
+@media(max-width: 1400px) {
+    .deadsec-qr {
+        max-height: 200px;
+    }
+
+    .vision-main {
+        font-size: 5rem;
+    }
+
+    .vision {
+        font-size: 3rem;
+    }
+
+    .shadow-text {
+        text-shadow:
+            -3px -3px 0 black,
+            3px -3px 0 black,
+            -3px 3px 0 black,
+            3px 3px 0 black;
+    }
+}
+
+@media(max-width: 1200px) {
+    .hacktivism {
+        max-height: 270px !important;
+    }
+}
+
+@media(max-width: 992px){
+    .dedsec-window-img{
+        display: none;
+    }
+    .propaganda-sub{
+        font-size: 3rem !important;
+    }
+    .video{
+        width: 100% !important;
+    }
+    .revolt{
+        height: 307px !important;
+        max-height: none;
+        min-height: none;
+    }
+}
+
+@media(max-width: 768px){
+    .freedom{
+        height: 307px !important;
+        max-height: none;
+        min-height: none;
+    }
+}
+
+@media(max-width: 576px){
+    .dedsec-xtra-windows{
+        display: none;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .vision-main{
+        font-size: 3rem;
+    }
+    .vision{
+        font-size: 1.5rem;
+    }
+    .shadow-text {
+        text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+    }
+    .propaganda-sub{
+        font-size: 1.7rem !important;
+    }
+    .subheading{
+        font-size: 0.9rem;
+    }
+    .video{
+        height: 250px !important;
+    }
+    .left-upper-card {
+        min-height: 100px;
+        max-height: 210px;
+        height: auto;
+    }
+}
