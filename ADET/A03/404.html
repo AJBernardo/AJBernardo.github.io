@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>System Compromised | DedSec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/img/dedsecLogo2.webp" rel="icon">
+    <style>
+        .error {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            background-color: var(--primaryBackgroundColor);
+            max-width: 700px;
+            height: auto;
+            color: white;
+        }
+
+        .btn {
+            border-color: white;
+            color: white;
+            scale: 1.2;
+        }
+
+        .btn:hover {
+            background-color: var(--highlightColor);
+            color: black;
+        }
+
+        @media(max-width: 768px){
+            .error {
+                display: flex;
+                flex-direction: column;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+            }
+        }
+
+        @media(max-width: 668px){
+            .lg-title {
+                font-size: 7rem;
+            }
+        }
+
+        @media(max-width: 596px) {
+            .error{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .lg-title {
+                font-size: 6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0 position-relative">
+        <img src="assets/img/error404.gif" alt="System Compromised: DedSec!" class="img-fluid w-100 object-fit-cover"
+            style="height: 100vh;">
+        <div class="error p-5">
+            <h1 class="lg-title">ERROR <span style="color: var(--highlightColor)">404</span></h1>
+            <p class="subheading"><span style="color: var(--highlightColor)">This page doesn’t exist </span>— just
+                another system lie. Stay sharp, you’ll be redirected soon.</p>
+            <a href="home.html" class="text-decoration-none text-white"><button class="btn rounded-0 mt-5">REDIRECT NOW</button></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
