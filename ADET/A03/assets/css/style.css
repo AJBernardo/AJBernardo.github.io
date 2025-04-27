@@ -9,9 +9,7 @@
     font-family: var(--primaryFont);
 }
 
-a,
-button,
-.clickable {
+a, button,.clickable {
     cursor: url('../img/cursor.cur') 0 0, pointer !important;
 }
 
@@ -40,36 +38,13 @@ button,
     color: var(--highlightColor) !important;
 }
 
-.dedsec-video, .about-video{
+.dedsec-video,.about-video {
     max-height: 695px;
     width: 100%;
     object-fit: cover;
     object-position: center center;
 }
 
-/* FOR ECHOED TEXT EFFECT */
-.text-stack {
-    position: relative;
-    display: inline-block;
-}
-
-.back-text,
-.front-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.front-text {
-    color: black;
-    z-index: 1;
-}
-
-.back-text {
-    color: var(--highlightColor);
-    transform: translate(10px, 10px);
-    z-index: 0;
-}
 
 .btn {
     --bs-btn-border-width: 3px;
@@ -141,7 +116,15 @@ button,
     height: 269px;
 }
 
-.council-dedsec{
+.vision-main {
+    font-size: 6rem;
+}
+
+.vision {
+    font-size: 4rem;
+}
+
+.council-dedsec {
     background: url('../img/dedsecCouncil.webp');
     background-position: top center;
     background-size: cover;
@@ -150,12 +133,12 @@ button,
     min-height: 250px;
 }
 
-.bg-members{
+.bg-members {
     background: url('../img/councilBackground.webp') no-repeat center center;
     background-size: cover;
 }
 
-.btn-members{
+.btn-members {
     max-height: 100px;
     width: 100px;
     margin-bottom: 20px;
@@ -163,12 +146,12 @@ button,
     border: none;
 }
 
-.btn-members img{
+.btn-members img {
     object-fit: cover;
     object-position: center center;
 }
 
-.left-message{
+.left-message {
     position: absolute;
     top: 15%;
     left: 5%;
@@ -177,7 +160,7 @@ button,
     height: auto;
 }
 
-.right-message{
+.right-message {
     position: absolute;
     bottom: 15%;
     right: 5%;
@@ -186,12 +169,108 @@ button,
     height: auto;
 }
 
-.gallery{
+.gallery {
     animation: none;
 }
 
-.gallery:hover{
+.gallery:hover {
     animation: zoom-in 0.5s ease-in-out forwards;
 }
 
+.shadow-text {
+    z-index: 1;
+    text-shadow:
+        -5px -5px 0 black,
+        5px -5px 0 black,
+        -5px 5px 0 black,
+        5px 5px 0 black;
+}
 
+@media(max-width: 1400px) {
+    .deadsec-qr {
+        max-height: 200px;
+    }
+
+    .vision-main {
+        font-size: 5rem;
+    }
+
+    .vision {
+        font-size: 3rem;
+    }
+
+    .shadow-text {
+        text-shadow:
+            -3px -3px 0 black,
+            3px -3px 0 black,
+            -3px 3px 0 black,
+            3px 3px 0 black;
+    }
+}
+
+@media(max-width: 1200px) {
+    .hacktivism {
+        max-height: 270px !important;
+    }
+}
+
+@media(max-width: 992px){
+    .dedsec-window-img{
+        display: none;
+    }
+    .propaganda-sub{
+        font-size: 3rem !important;
+    }
+    .video{
+        width: 100% !important;
+    }
+    .revolt{
+        height: 307px !important;
+        max-height: none;
+        min-height: none;
+    }
+}
+
+@media(max-width: 768px){
+    .freedom{
+        height: 307px !important;
+        max-height: none;
+        min-height: none;
+    }
+}
+
+@media(max-width: 576px){
+    .dedsec-xtra-windows{
+        display: none;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .vision-main{
+        font-size: 3rem;
+    }
+    .vision{
+        font-size: 1.5rem;
+    }
+    .shadow-text {
+        text-shadow:
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 0 black;
+    }
+    .propaganda-sub{
+        font-size: 1.7rem !important;
+    }
+    .subheading{
+        font-size: 0.9rem;
+    }
+    .video{
+        height: 250px !important;
+    }
+    .left-upper-card {
+        min-height: 100px;
+        max-height: 210px;
+        height: auto;
+    }
+}
