@@ -40,7 +40,7 @@ button,
     color: var(--highlightColor) !important;
 }
 
-.dedsec-video{
+.dedsec-video, .about-video{
     max-height: 695px;
     width: 100%;
     object-fit: cover;
@@ -166,6 +166,32 @@ button,
 .btn-members img{
     object-fit: cover;
     object-position: center center;
+}
+
+.left-message{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    max-width: 30%;
+    min-width: 100px;
+    height: auto;
+}
+
+.right-message{
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    max-width: 30%;
+    min-width: 100px;
+    height: auto;
+}
+
+.gallery{
+    animation: none;
+}
+
+.gallery:hover{
+    animation: zoom-in 0.5s ease-in-out forwards;
 }
 
 
