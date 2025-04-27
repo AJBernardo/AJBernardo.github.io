@@ -11,10 +11,10 @@ document.getElementById('footer-container').innerHTML =
             </a>
 
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="text-decoration-none px-3 text-white">Home</a></li>
-                <li class="nav-item"><a href="#" class="text-decoration-none px-3 text-white">The Council</a></li>
-                <li class="nav-item"><a href="#" class="text-decoration-none px-3 text-white">About</a></li>
-                <li class="nav-item"><a href="#" class="text-decoration-none px-3 text-white">Thy Austine</a></li>
+                <li class="nav-item"><a href="home.html" class="text-decoration-none px-3 text-white">Home</a></li>
+                <li class="nav-item"><a href="council.html" class="text-decoration-none px-3 text-white">The Council</a></li>
+                <li class="nav-item"><a href="about.html" class="text-decoration-none px-3 text-white">About</a></li>
+                <li class="nav-item"><a href="/" class="text-decoration-none px-3 text-white">Thy Austine</a></li>
             </ul>
         </footer>
     </div>
