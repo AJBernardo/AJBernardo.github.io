@@ -1,6 +1,5 @@
-document.getElementById('footer-container').innerHTML = 
-` <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 text-black">
+document.getElementById('footer-container').innerHTML =
+    ` <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 text-black">
             <p class="col-md-4 mb-0 text-white">&copy; 2025 DEDSEC</p>
 
             <a href="./"
@@ -17,5 +16,4 @@ document.getElementById('footer-container').innerHTML =
                 <li class="nav-item"><a href="/" class="text-decoration-none px-3 text-white">Thy Austine</a></li>
             </ul>
         </footer>
-    </div>
-`;
+    `;

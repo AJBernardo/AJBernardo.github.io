@@ -1,0 +1,94 @@
+@media(max-width: 1400px){
+    .title.cover{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .title{
+        font-size: 5rem;
+    }
+    .title.cover{
+        font-size: 4.5rem;
+    }
+}
+
+@media(max-width: 1050px){
+    .title.cover{
+        font-size: 3rem;
+    }
+    .heading.cover{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 992px){
+    .title{
+        font-size: 4.2rem;
+    }
+    .title.cover{
+        font-size: 2.8rem;
+    }
+    .heading.cover{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 768px){
+    .left-message{
+        top: 20%;
+        max-width: 35%;
+    }
+    .right-message{
+        bottom: 5%;
+        max-width: 35%;
+    }
+    .title.cover{
+        font-size: 2.5rem;
+    }
+    .heading.cover{
+        font-size: 1.1rem;
+    }
+    .btn-primary{
+        scale: 1.5 !important;
+    }
+    .grid-gallery{
+        display: none !important;
+    }
+    .carousel-gallery{
+        display: block !important;
+    }
+}
+
+@media(max-width: 576px){
+    .left-message{
+        top: 25%
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .title.cover{
+        font-size: 2rem;
+    }
+    .heading.cover{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 428px){
+    .left-message{
+        top: 30%
+    }
+    .title.cover{
+        font-size: 1.8rem;
+    }
+    .heading.cover{
+        display: none;
+    }
+    .subheading{
+        font-size: 0.8rem;
+    }
+    .body{
+        font-size: 0.8rem;
+    }
+}
