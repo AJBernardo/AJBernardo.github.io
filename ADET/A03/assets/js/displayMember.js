@@ -49,7 +49,7 @@ function displayMember(member) {
             memberDescrip = descrip[0];
     }
 
-    memberName.innerHTML = `<h1 class="lg-heading text-white text-end"><span class="lg-heading" style="color: var(--highlightColor)">` + memberFName + `</span> ` + memberLName + `</h1>`;
+    memberName.innerHTML = `<h1 class="lg-heading text-white text-center text-md-end"><span class="lg-heading" style="color: var(--highlightColor)">` + memberFName + `</span><br>` + memberLName + `</h1>`;
     memberAppearance.innerHTML = `<img src="assets/img/` + name + `.webp" alt="` + memberFName + ' ' + memberLName + `" class="img-fluid" style="max-height: 600px;">`;
-    memberDescription.innerHTML = `<p class="subheading w-75 text-white">` + memberDescrip + `</p>`;
+    memberDescription.innerHTML = `<p class="subheading w-75 text-center text-md-start text-white descrip">` + memberDescrip + `</p>`;
 }
