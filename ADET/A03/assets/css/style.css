@@ -185,3 +185,20 @@ a, button,.clickable {
         -5px 5px 0 black,
         5px 5px 0 black;
 }
+
+@media (max-width: 768px) {
+    .dedsec-footer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .dedsec-links {
+        display: none !important;
+    }
+
+    .dedsec-copy {
+        text-align: center;
+        width: 100%;
+    }
+}
