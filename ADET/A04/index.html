@@ -21,36 +21,43 @@
             <div class="col-md-7 col-lg-8 col-xxl-9 mb-4 mb-lg-0">
                 <div class="row">
                     <div class="col-12 col-xl-4 col-xxl-3 categories-container const-height mb-4 mb-xl-0">
-                        <div class="card overflow-y-scroll h-100">
-
+                        <div class="d-flex flex-wrap card overflow-x-scroll h-100 px-4 py-2 p-xl-4 gap-4" id="category-list">
+                            <!-- displayCategoryList() -->
                         </div>
                     </div>
                     <div class="col-12 col-xl-8 col-xxl-9 menu-container const-height">
-                        <div class="row overflow-y-scroll h-100 px-xl-0 px-xxl-5">
-                            <div class="col mb-4 d-flex justify-content-center">
-                                <div class="card d-flex align-items-center" style="max-height: 200px; width: 200px;">
-                                    <img src="assets/img/assorted_nigiri.webp" alt="nigiri" class="img-fluid m-3"
-                                        style="max-height: 100px; width: 100px;">
-                                    <h6>ASSORTED NIGIRI</h6>
-                                    <h6>PHP 320.00</h6>
-                                </div>
-                            </div>
+                        <div class="row d-flex justify-content-center align-content-start flex-wrap gap-4 overflow-y-scroll h-100 px-xl-0 px-xxl-5" id="menu-item-container">
+                            <!-- displayMenuItems() -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 col-lg-4 col-xxl-3 const-height receipt">
-                <div class="card h-100">
-
+                <div class="card h-100 p-3">
+                    <div class="row mb-3" style="height: 65dvh;">
+                        <div class="col overflow-y-auto h-100" id="sales-list">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                        <h6>ITEMS</h6><span class="text-end">PRICE</span>
+                                        <!-- addItem() or removeItem() -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5 class="text-white">TOTAL</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
