@@ -1,11 +1,18 @@
 const salesList = document.getElementById("sales-list");
+const totalAmount = document.getElementById("total-amount");
+const btnCancel = document.getElementById('button-cancel');
+const btnPay = document.getElementById('button-pay');
+let total = 0;
+
+btnCancel.disabled = true;
+btnPay.disabled = true;
 
 function displayCategoryList() {
     const categoryList = document.getElementById('category-list');
 
     menuList.forEach((menu, i) => {
         categoryList.innerHTML +=
-            `<button class="btn btn-outline-secondary" onclick="displayMenuItems(${i});">${menu.category.toUpperCase()}</button>`;
+            `<button class="btn btn-categories btn-outline-light" onclick="displayMenuItems(${i});">${menu.category.toUpperCase()}</button>`;
     })
 }
 
@@ -40,12 +47,14 @@ function addItem(i, itemIndex) {
     itemBtnSubtract.disabled = false;
 
     const itemExist = document.getElementById(`${itemArray.itemCode}-receipt`);
+    const subTotal = itemArray.itemPrice * itemArray.quantityOrdered;
+    total += itemArray.itemPrice;
+    isReceiptEmpty();
 
     if(itemExist){
         const salesQuantity = document.getElementById(`${itemArray.itemCode}-qty`);
         const salesSubTotal = document.getElementById(`${itemArray.itemCode}-subtotal`);
-        const subTotal = itemArray.itemPrice * itemArray.quantityOrdered;
-
+        
         salesQuantity.textContent = `${itemArray.quantityOrdered} × ${itemArray.itemPrice}.00`;
         salesSubTotal.textContent = `₱${subTotal}.00`;
     }else{
@@ -59,6 +68,7 @@ function addItem(i, itemIndex) {
             </div>
         </div>`;
     }
+    totalAmount.textContent = `₱${total}.00`
 }
 
 function removeItem(i, itemIndex) {
@@ -73,9 +83,12 @@ function removeItem(i, itemIndex) {
         itemArray.quantityOrdered -= 1;
         itemQuantity.innerHTML = itemArray.quantityOrdered;
         const subTotal = (itemArray.itemPrice * itemArray.quantityOrdered);
+        total -= itemArray.itemPrice
+        isReceiptEmpty();
         if(salesQuantity){
             salesQuantity.textContent = `${itemArray.quantityOrdered} × ${itemArray.itemPrice}.00`;
             salesSubTotal.textContent = `₱${subTotal}.00`;
+            totalAmount.textContent = `₱${total}.00`
         }
         
         if (itemArray.quantityOrdered === 0) {
@@ -89,6 +102,38 @@ function removeItem(i, itemIndex) {
     } else {
         itemBtnSubtract.disabled = true;
     }
+
+    isReceiptEmpty();
 }
+
+function isReceiptEmpty(){
+    if(total > 0){
+        btnCancel.disabled = false;
+        btnPay.disabled = false;
+    }else{
+        btnCancel.disabled = true;
+        btnPay.disabled = true;
+    }
+}
+
+function reset(){
+    total = 0;
+    salesList.innerHTML = '';
+    totalAmount.innerHTML = '';
+
+    menuList.forEach(menu =>{
+        menu.items.forEach(item =>{
+            item.quantityOrdered = 0;
+            
+            const itemQuantity = document.getElementById(`${item.itemCode}-quantity`);
+            const itemBtnSubtract = document.getElementById(`${item.itemCode}-subtract`);
+            if(itemQuantity){
+                itemQuantity.innerHTML = 0;
+                itemBtnSubtract.disabled = true;
+            }
+        })
+    })
+}
+
 
 displayCategoryList();
