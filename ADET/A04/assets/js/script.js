@@ -69,7 +69,13 @@ function addItem(i, itemIndex) {
             </div>
         </div>`;
     }
+
     totalAmount.textContent = `₱${total}.00`
+    const addedItem = document.getElementById(`${itemArray.itemCode}-receipt`);
+    // FOR FUTURE REFERNCE: .scrollIntoView() was used to show the current element to display
+    if (addedItem) {
+        addedItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 }
 
 function removeItem(i, itemIndex) {
@@ -119,8 +125,12 @@ function isReceiptEmpty() {
 
 function reset() {
     total = 0;
-    salesList.innerHTML = '';
     totalAmount.innerHTML = '';
+    salesList.innerHTML = `<div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h6>ITEMS</h6><span class="text-end">PRICE</span>
+                            </div>
+                        </div>`;
 
     menuList.forEach(menu => {
         menu.items.forEach(item => {

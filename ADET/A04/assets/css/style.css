@@ -3,7 +3,7 @@
 }
 
 .const-height {
-    height: calc(100vh - 120px);
+    height: calc(100dvh - 120px);
 }
 
 .heading{
@@ -47,10 +47,31 @@
     }
 
     .menu-container {
-        height: calc(40dvh);
+        height: calc(36dvh);
     }
 
     .receipt {
-        height: calc(50dvh - 168px);
+        height: calc(54dvh - 168px);
+    }
+
+    .btn{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 448px){
+    .categories-container {
+        height: 8dvh;
+    }
+
+    .menu-container {
+        height: calc(36dvh);
+    }
+
+    .receipt {
+        height: calc(56dvh - 168px);
+    }
+    .btn{
+        font-size: 0.8rem;
     }
 }
