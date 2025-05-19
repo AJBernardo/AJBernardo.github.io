@@ -15,7 +15,7 @@ let cart = {};
 
 const getAllCategories = async () => {
 
-    const url = 'http://localhost/Academics/COMP%20019/AJBernardo.github.io/ADET/A06_BE/categories.php';
+    const url = 'http://localhost/Academics/COMP%20019/AJBernardo.github.io/ADET/A06/categories.php';
 
     fetch(url)
         .then(response => response.json())
@@ -30,7 +30,7 @@ getAllCategories();
 
 const getProducts = async (categoryID) => {
 
-    const url = 'http://localhost/Academics/COMP%20019/AJBernardo.github.io/ADET/A06_BE/products.php';
+    const url = 'http://localhost/Academics/COMP%20019/AJBernardo.github.io/ADET/A06/products.php';
 
     const categoryData = {
         categoryID: categoryID
