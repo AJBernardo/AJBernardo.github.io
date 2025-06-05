@@ -1,3 +1,5 @@
+let colorMode = "light";
+
 function changeColorMode() {
     const body = document.getElementById("body");
     const navbar = document.getElementById("navbar");
