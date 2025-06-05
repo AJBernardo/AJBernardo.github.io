@@ -91,14 +91,7 @@ function expandShowInfo(id, btnId) {
     }
 }
 
-function changeColorMode() {
-    var body = document.getElementById("body");
-    var navbarNav = document.getElementById("navbarNav")
-    colorMode = colorMode == "dark" ? "light" : "dark";
-    body.setAttribute("data-bs-theme", colorMode);
-    navbarColor = navbarColor == "white" ? "#212529" : "white";
-    navbarNav.style.backgroundColor = navbarColor;
-}
+
 
 
 

@@ -11,33 +11,23 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/roboto-condensed-3" rel="stylesheet">
-  <link href="shared/navbar.css" rel="stylesheet">
   <link href="css/artists.css" rel="stylesheet">
   <link href="img/idolfactory.png" rel="icon">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <!-- THIS IS WHERE THE BODY STARTS -->
 
 <body id="body">
-  <!-- NAVBAR SETTINGS -->
-  <nav class="navbar navbar-expand-lg shadow">
-    <img class="logo" src="img/logo.png" alt="IdolFactory Logo">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="artists.html">ARTISTS</a>
-        </li>
-      </ul>
-      <button class="mode" onclick="changeColorMode()">MODE</button>
-    </div>
-  </nav>
+  <div class="container-fluid navbar-container" id="navbarContainer">
+    <!-- NAVBAR WILL BE INJECTED VIA JS -->
+  </div>
 
   <!-- ARTISTS SELECTION -->
   <div class="artists container-fluid">
@@ -45,7 +35,7 @@
       <div class="col-12 col-xl-2 border-end py-5 p-0" id="artists-column"></div>
       <div class=" artist-photobox col-12 col-lg-6 col-xl-4 py-5">
         <div class="artist-photo container">
-          <img id= "artist-photo" src="img/becky.png" class="img-fluid object-fit-cover">
+          <img id="artist-photo" src="img/becky.png" class="img-fluid object-fit-cover">
         </div>
       </div>
       <div class="artist-info col-12 col-lg-6 col-xl-6 py-5">
@@ -74,27 +64,32 @@
           </div>
         </div>
         <div class="row mt-4 p-0 m-0">
-          <p id="intro">Rebecca Patricia Armstrong is a Thai-British actress, singer, and model. Armstrong began her acting career with the drama series TharnType 2: 7 Years of Love. She received greater recognition for starring in the drama Gap: The Series and the romance comedy movie Long Live Love!.</p>
+          <p id="intro">Rebecca Patricia Armstrong is a Thai-British actress, singer, and model. Armstrong began her
+            acting career with the drama series TharnType 2: 7 Years of Love. She received greater recognition for
+            starring in the drama Gap: The Series and the romance comedy movie Long Live Love!.</p>
         </div>
         <div class="row p-0 m-0" id="photo-gallery p-0">
           <div class="col-12 col-sm-4 mb-3 p-auto">
             <div class="gallery-item">
               <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo1">
-              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="first-photo"  onmouseover="crossFadeEffect('first-photo')" onmouseout="resetImage('first-photo')">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="first-photo"
+                onmouseover="crossFadeEffect('first-photo')" onmouseout="resetImage('first-photo')">
             </div>
           </div>
 
           <div class="col-12 col-sm-4 mb-3 p-auto">
             <div class="gallery-item">
               <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo2">
-              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="second-photo"  onmouseover="crossFadeEffect('second-photo')" onmouseout="resetImage('second-photo')">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="second-photo"
+                onmouseover="crossFadeEffect('second-photo')" onmouseout="resetImage('second-photo')">
             </div>
           </div>
 
           <div class="col-12 col-sm-4 mb-3 p-auto">
             <div class="gallery-item">
               <img class="shadow" src="img/becky-gal.png" alt="SCOY" id="hover-photo3">
-              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="third-photo"  onmouseover="crossFadeEffect('third-photo')" onmouseout="resetImage('third-photo')">
+              <img class="shadow" src="img/cardfront.jpg" alt="SCOY" id="third-photo"
+                onmouseover="crossFadeEffect('third-photo')" onmouseout="resetImage('third-photo')">
             </div>
           </div>
         </div>
@@ -141,6 +136,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+  <script src="shared/navbar.js"></script>
 </body>
 
 </html>
