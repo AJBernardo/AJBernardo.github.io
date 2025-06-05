@@ -83,12 +83,3 @@ function resetImage(id) {
   var poster = document.getElementById(id);
   poster.classList.remove('fade');
 }
-
-
-
-
-
-
-
-
-
