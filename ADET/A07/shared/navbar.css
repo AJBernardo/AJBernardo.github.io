@@ -1,0 +1,37 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.navbar{
+    /* background: linear-gradient(92deg, #F9C6D1 17.49%, #F1EFEF 102.45%); */
+    height: 60px;
+    z-index: 1000;
+}
+
+.logo{
+    margin-left: 50px;
+    max-height: 40px;
+}
+
+.navbar-collapse {
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.nav-item{
+    margin-right: 50px;
+}
+
+.mode{
+    background-color: transparent;
+    border: none;
+    margin-right: 50px;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}

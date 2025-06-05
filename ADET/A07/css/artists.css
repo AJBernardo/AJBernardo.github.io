@@ -1,0 +1,56 @@
+.artists button{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s ease;;
+}
+
+.artists button:hover{
+    background-color: #1f1d1b;
+    color: white;
+}
+
+.artist-photo{
+    padding: 0px;
+    height: 550px;
+}
+
+.artist-photo img{
+    border-radius: 20px;
+    height: 100%;
+}
+
+.artist-info{
+    text-align: justify;
+    font-weight: 400;
+    padding-right: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 992px) {
+    .artist-info{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+

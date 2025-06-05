@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idol Factory</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/roboto-condensed-3" rel="stylesheet">
+  <link href="shared/navbar.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="img/idolfactory.png" rel="icon">
+</head>
+
+<!-- THIS IS WHERE THE BODY STARTS -->
+
+<body id="body">
+  <!-- NAVBAR SETTINGS -->
+  <nav class="navbar navbar-expand-lg shadow">
+    <img class="logo" src="img/logo.png" alt="IdolFactory Logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="artists.html">ARTISTS</a>
+        </li>
+      </ul>
+      <button class="mode" onclick="changeColorMode()">MODE</button>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL SETTINGS -->
+  <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/picture1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/picture2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/picture3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/picture4.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/picture5.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/picture0.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlides" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSlides" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ABOUT IDOLFACTORY -->
+  <hr>
+  <div class="about container">
+    <h1 class="display-1">IDOL FACTORY</h1>
+    <p>At Idol Factory Co., Ltd., we are passionate about redefining entertainment in Thailand. The company is dedicated
+      to producing compelling series that push the boundaries of storytelling, with a strong focus on inclusive and
+      diverse content. Notable projects like Secret Crush on You and GAP: The Series highlight our commitment to
+      representing LGBTQ+ narratives, showcasing stories that resonate with audiences both locally and globally.
+    </p>
+    <p>
+      We prioritize maintaining a close connection with our fans, engaging through social media and community
+      interactions to keep our audience at the heart of every project. This approach ensures that our content remains
+      relevant and impactful, reflecting the experiences and voices of our diverse community
+    </p>
+    <a href="https://www.instagram.com/idolfactoryth/?hl=en"><button class="btn btn-outline-secondary my-5">Learn More</button></a> 
+  </div>
+
+  <!-- EMBEDDED YOUTUBE VIDEO -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="vid-holder col-md-8 mb-5">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/w5QhUqo0iDc?si=kNNOwh2-fa0zcBUv" title="idolFactory Project"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIST OF THE SHOWS -->
+  <div class="shows container border-top my-5">
+    <div class="row" id="showsList">
+      <h1 class="display-1 mt-4">SHOWS</h1>
+      <p class="mb-5">Explore our lineup of shows and get ready to experience a journey of passion, love, and
+        unforgettable moments!</p>
+    </div>
+  </div>
+
+  <!-- OST GALLERY -->
+  <div class="ost container border-top my-5" id="ost-container">
+    <h1 class="display-1">IDOLFACTORY OST GALLERY</h1>
+
+  </div>
+
+  <!-- ARTISTS' SCHEDULE -->
+  <div class="sched container h-100">
+    <div class="row">
+      <iframe src="embed.html" class="w-100 vh-100 rounded"></iframe>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="d-flex flex-column flex-sm-row justify-content-between m-5 border-top">
+      <p>&copy; 2024 IdolFactory. All rights reserved. For Educational Purposes Only</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://x.com/IDOLFACTORYTH">
+            <i class="bi bi-twitter-x" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://www.instagram.com/idolfactoryth/?hl=en">
+            <i class="bi bi-instagram" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="https://web.facebook.com/idolfactoryth">
+            <i class="bi bi-facebook" style="font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-4">
+          <a class="link-body-emphasis" href="www.youtube.com/@IDOLFACTORY">
+            <i class="bi bi-youtube" style="font-size: 24px;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="js/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
