@@ -4,45 +4,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Austine Jade's</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>It's Austine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="assets/img/icon_thy-austine.png" rel="icon">
+    <link href="https://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">
 
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            color: white;
-            background: url("assets/img/frieren-journey.gif") no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-            backdrop-filter: brightness(0.40) contrast(1.2);
+        * {
+            font-family: 'Earth Orbiter', sans-serif;
+
         }
 
-        @media(max-width: 441px){
-            .text1{
-                font-size: 40px !important;
-            }
-            .text2{
-                font-size: 16px !important;
-            }
+        .sidebar {
+            background-color: #1DE9B6;
+            max-width: 60px;
+            height: 100dvh;
+        }
+
+        .contents {
+            transform: rotate(90deg);
         }
     </style>
 </head>
 
-<body>
-    <div class="container d-flex justify-content-center align-items-center text-center vh-100">
-        <div>
-            <h1 class="fs-1 text1">YOUR FAVORITE TRAVELLER</h1>
-            <h1 class="fs-4 text2">WILL BE BACK SOON!</h1>
+<body data-bs-theme="dark">
+    <div class="sidebar px-1 py-3 position-fixed">
+        <img src="assets/img/logo.png" alt="It's Austine" class="img-fluid object-fit-contain" style="max-width: 50px;">
+        <div class="contents">
+            <ul class="navbar-nav flex-row gap-4 text-dark fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
 
